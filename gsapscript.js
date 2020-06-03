@@ -22,7 +22,7 @@ gsap.registerPlugin(ScrollTrigger);
     duration: 1, 
     x: 50, 
     delay: 1.5, 
-    ease:"expo.out"
+    ease:"power4.out"
   });
 
   gsap.from('#header', {
@@ -50,7 +50,7 @@ gsap.registerPlugin(ScrollTrigger);
     toggleActions: "restart pause resume pause"
   },
   opacity: 0,
-  x: -50,
+  x: 50,
   ease: "expo.out"
   })
 
@@ -63,10 +63,9 @@ gsap.registerPlugin(ScrollTrigger);
     delay: 1
   },
   opacity: 0,
-  x: 50,
+  x: -50,
   ease: "expo.out"
   })
-
   gsap.from("#firstimg", {
   scrollTrigger: {
     trigger: "#firstimg",
@@ -78,7 +77,8 @@ gsap.registerPlugin(ScrollTrigger);
   opacity: 0,
   x: 50,
   ease: "expo.out",
-  scale: 0.1
+  scale: 0.1,
+  rotation: 45
   })
 
   gsap.from("#firstbtn", {
@@ -130,9 +130,10 @@ gsap.registerPlugin(ScrollTrigger);
       delay: 2,
     },
     opacity: 0,
-    x: 50,
-    ease: "expo.out",
-    scale: 0.1
+    x: -800,
+    ease: "power2.out",
+    scale: 0.1,
+    delay: 4
     })
 
     gsap.from("#secondbtn", {
@@ -158,7 +159,7 @@ gsap.registerPlugin(ScrollTrigger);
       toggleActions: "restart pause resume pause"
     },
     opacity: 0,
-    x: -50,
+    x: 50,
     ease: "expo.out"
     })
   
@@ -171,22 +172,22 @@ gsap.registerPlugin(ScrollTrigger);
       delay: 1
     },
     opacity: 0,
-    x: 50,
+    x: -50,
     ease: "expo.out"
     })
   
     gsap.from("#thirdimg", {
     scrollTrigger: {
       trigger: "#thirdimg",
-      start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
       delay: 2,
     },
     opacity: 0,
-    x: 50,
+    x: 100,
     ease: "expo.out",
-    scale: 0.1
+    scale: 0,
+    rotation: -480
     })
 
     gsap.from("#thirdbtn", {
@@ -266,7 +267,7 @@ gsap.registerPlugin(ScrollTrigger);
         },
         opacity: 0,
         x: 50,
-        ease: "expo.out",
+        ease: "bounce.out(1.7)",
         rotation: 360,
         scale: 0.1
         })
@@ -280,7 +281,7 @@ gsap.registerPlugin(ScrollTrigger);
       toggleActions: "restart pause resume pause"
     },
     opacity: 0,
-    x: -50,
+    x: 50,
     ease: "expo.out"
     })
   
@@ -293,7 +294,7 @@ gsap.registerPlugin(ScrollTrigger);
       delay: 1
     },
     opacity: 0,
-    x: 50,
+    x: -50,
     ease: "expo.out"
     })
   

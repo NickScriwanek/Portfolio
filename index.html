@@ -9,11 +9,11 @@
     <header id="header">
         <img src="ns.png" id= "nslogo">
         <ul>
-            <li><a href="#home" class= "active" onclick="toggle()">THUIS</a></li>
-            <li><a href="#introduction" onclick="toggle()">INTRODUCTIE</a></li>
-            <li><a href="#leeruitkomsten" onclick="toggle()">LEERUITKOMSTEN</a></li>
-            <li><a href="#skills" onclick="toggle()">VAARDIGHEDEN</a></li>
-            <li><a href="#contact" onclick="toggle()">CONTACT</a></li>
+            <li><a href="#home" id="homeNav"class= "active" onclick="toggle('homeNav')">THUIS</a></li>
+            <li><a href="#introduction" id="introductionNav" onclick="toggle('introductionNav')">INTRODUCTIE</a></li>
+            <li><a href="#leeruitkomsten" id="leeruitkomstenNav" onclick="toggle('leeruitkomstenNav')">LEERUITKOMSTEN</a></li>
+            <li><a href="#skills" id="skillsNav" onclick="toggle('skillsNav')">VAARDIGHEDEN</a></li>
+            <li><a href="#contact" id="contactNav" onclick="toggle('contactNav')">CONTACT</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
@@ -60,9 +60,13 @@
     </section>
 
     <script type="text/javascript">
-    function toggle(){
-        var header = document.getElementById("header")
-        header.classList.toggle('active')
+    var previousSectionID = document.getElementById("homeNav");
+    
+    function toggle(f_sectionID){
+        previousSectionID.classList.remove('active');
+        var sectionID = document.getElementById(f_sectionID);
+        sectionID.classList.add('active');
+        previousSectionID = sectionID;
     }
     </script>
     
