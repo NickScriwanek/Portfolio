@@ -1,11 +1,45 @@
- //Animation landing page
-  gsap.from('#landingp', {opacity: 0, duration: 1, x: -50, delay: 1, ease:"expo.out"});
-  gsap.from('#landingimg', {opacity: 0, duration: 1, x: 50, delay: 1.5, ease:"expo.out"});
-  gsap.from('#landingh2', {opacity: 0, duration: 1, x: 50, delay: 0.5, ease:"expo.out"});
-  gsap.from('#header', {opacity: 0, duration: 1, y: -50, delay: 2.5, ease:"expo.out"});
-  gsap.from('#nslogo', {opacity: 0, duration: 1, rotation: 360, delay: 2.5, ease:"expo.out"});
+gsap.registerPlugin(ScrollTrigger);
 
-  gsap.registerPlugin(ScrollTrigger);
+ //Animation landing page
+  gsap.from('#landingh2', {
+    opacity: 0, 
+    duration: 1, 
+    x: -50, 
+    delay: 0.5, 
+    ease:"expo.out"
+  });
+ 
+  gsap.from('#landingp', {
+    opacity: 0, 
+    duration: 1, 
+    x: 50, 
+    delay: 1, 
+    ease:"expo.out"
+  });
+
+  gsap.from('#landingimg', {
+    opacity: 0, 
+    duration: 1, 
+    x: 50, 
+    delay: 1.5, 
+    ease:"expo.out"
+  });
+
+  gsap.from('#header', {
+    opacity: 0,
+    duration: 1,
+    y: -50, delay: 2.5,
+    ease:"expo.out"
+  });
+
+  gsap.from('#nslogo', {
+    opacity: 0,
+    duration: 1,
+    rotation: 360,
+    scale: 0.1,
+    delay: 2.5,
+    ease:"expo.out"
+  });
 
 //Animation first section
   gsap.from("#firsth2", {
@@ -211,6 +245,75 @@
     gsap.from("#fourthbtn", {
       scrollTrigger: {
         trigger: "#firstbtn",
+        start: "20px, 80%",
+        scrub: 1,
+        toggleActions: "restart pause resume pause",
+        delay: 2,
+      },
+      opacity: 0,
+      x: 50,
+      ease: "expo.out",
+      scale: 0.1
+      })
+
+      gsap.from("#line", {
+        scrollTrigger: {
+          trigger: "#line",
+          start: "20px, 80%",
+          scrub: 1,
+          toggleActions: "restart pause resume pause",
+          delay: 2,
+        },
+        opacity: 0,
+        x: 50,
+        ease: "expo.out",
+        rotation: 360,
+        scale: 0.1
+        })
+
+            //Animation fifth section
+  gsap.from("#fifthh2", {
+    scrollTrigger: {
+      trigger: "#fifthh2",
+      start: "20px, 80%",
+      scrub: 1,
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    x: -50,
+    ease: "expo.out"
+    })
+  
+    gsap.from("#fifthp", {
+    scrollTrigger: {
+      trigger: "#fiftp",
+      start: "20px, 80%",
+      scrub: 1,
+      toggleActions: "restart pause resume pause",
+      delay: 1
+    },
+    opacity: 0,
+    x: 50,
+    ease: "expo.out"
+    })
+  
+    gsap.from("#fifthimg", {
+    scrollTrigger: {
+      trigger: "#fifthimg",
+      start: "20px, 80%",
+      scrub: 1,
+      toggleActions: "restart pause resume pause",
+      delay: 2,
+    },
+    opacity: 0,
+    x: 50,
+    ease: "expo.out",
+    scale: 0.1
+    })
+
+    gsap.from("#fifthbtn", {
+      scrollTrigger: {
+        trigger: "#fifthbtn",
         start: "20px, 80%",
         scrub: 1,
         toggleActions: "restart pause resume pause",

@@ -109,6 +109,12 @@ section:nth-child(odd)
 {
     width: 100px;
 }
+#landingsvg path
+{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+}
+
 @media (max-width: 992px) 
 {
     section
