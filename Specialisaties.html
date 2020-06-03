@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialisaties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="ns.png" href="index.html" width='100px'>
+        <ul>
+            <li><a href="index.html" onclick="toggle()">Terug naar Home</a></li>
+            <li><a href="#gamification" class= "active" onclick="toggle()">Gamification & Storytelling</a></li>
+            <li><a href="#advanced_development" onclick="toggle()">Advanced Development</a></li>
+            <li><a href="#projects" onclick="toggle()">???</a></li>
+            <li><a href="#skills" onclick="toggle()">???</a></li>
+            <li><a href="#contact" onclick="toggle()">???</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="gamification">
+        <div>
+            <h2>Gamification & Storytelling</h2>
+            <p>Ik heb voor deze specialisatie een Infographic gemaakt over de evolutie van Virtual Reality, omdat ik zelf ook veel doe met Virtual Reality (gaming, video's kijken) en ik denk dat Virtual Reality nog beter gaat worden in de toekomst. Voor de eindopdracht heb ik een natuurgebied gemaakt in Unreal Engine. </p>
+        </div>
+        <a href="#">Klik hier</a>
+        <img class="icons" src="logo1.png">
+    </section>
+    <section id="advanced_development">
+        <div>
+            <h2>Advanced Development</h2>
+            <p>Voor deze specialisatie heb ik JavaScript gebruikt om mijn website levendiger te maken, door een assortiment van verschillende animaties met behulp van GSAP (Green Sock Animation Platform)</p>
+             <a href="advanced_development.html">Klik hier</a>
+        </div>
+        <img src="ns.png">
+    </section>
+    <section id="projects">
+        <div>
+            <h2>???</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nemo voluptates eveniet quae numquam quidem quia repellendus vitae aliquam magni iure veritatis hic earum quasi mollitia, dolorem molestias assumenda animi!</p>
+            <a href="#">Klik hier</a>
+        </div>
+    </section>
+    <section id="skills">
+        <div>
+            <h2>???</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia iusto sunt recusandae consectetur. Sapiente nam doloremque earum distinctio et accusantium! Omnis amet, doloremque quaerat asperiores laborum quasi esse odit.</p>   
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <h2>???</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptas soluta dolorum numquam neque rerum excepturi obcaecati eum! Sequi voluptas sint beatae laborum repudiandae id corrupti deleniti deserunt facere architecto!</p>
+        </div>
+    </section>
+    <script type="text/javascript">
+    function toggle(){
+        var header = document.getElementById("header")
+        header.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welkom op mijn Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+</head>
+<body>
+    <header id="header">
+        <img src="ns.png" id= "nslogo">
+        <ul>
+            <li><a href="#home" class= "active" onclick="toggle()">THUIS</a></li>
+            <li><a href="#introduction" onclick="toggle()">INTRODUCTIE</a></li>
+            <li><a href="#leeruitkomsten" onclick="toggle()">LEERUITKOMSTEN</a></li>
+            <li><a href="#skills" onclick="toggle()">VAARDIGHEDEN</a></li>
+            <li><a href="#contact" onclick="toggle()">CONTACT</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="home">
+        <div>
+            <h2 id="landingh2">Mijn portfolio</h2>
+            <p id="landingp">Op mijn Portfolio laat ik mijn voortgang zien, van het begin van de opleiding tot het einde. Zo kan je zien hoe ik me heb ontwikkeld in de opleiding en krijg je een goede indruk van wat ik kan.</p>
+        </div>
+        <img id="landingimg" src="photo.jpg">
+    </section>
+    <section id="introduction">
+        <div>
+            <h2 id="firsth2">Wie ben ik?</h2>
+            <p id="firstp">Ik ben Nick Scriwanek en ik ben 19 jaar oud. Ik heb mijn VMBO-T diploma behaald en vervolgens heb ik mijn HAVO diploma behaald. Ik heb vanuit HAVO weinig programmeerervaring, alleen een beetje HTML. Wel heb ik ervaring met computerhardware, want ik heb al voor klanten computers geassembleerd en voor Selfie Week heb ik mijn computer watergekoeld, zoals te zien is op de foto. Hiermee heb ben ik tot de top drie van Aquamarijn-Oost gekomen. Verder heb ik een YouTube kanaal sinds begin dit jaar, waar ik video's maak over Japanse stripboeken.</p>
+        </div>
+        <img id="firstimg" src="pc.jpg">
+    </section>
+    <section id="leeruitkomsten">
+        <div>
+            <h2 id="secondh2">Mijn Leeruitkomsten</h2>
+            <p id="secondp">Hier zie je hoe ik mijn leeruitkomsten heb aangetoond.</p>
+            <a id="secondbtn" href="leeruitkomsten.html">Leeruitkomsten</a>   
+        </div>
+        <img id="secondimg" src="appv3.png">
+    </section>
+    <section id="skills">
+        <div>
+            <h2 id="thirdh2">Mijn vaardigheden en specialisaties</h2>
+            <p id="thirdp">Ik heb basiservaring HTML en CSS. Ook heb ik ervaring met Unreal Engine en Unity, hier heb ik in een proftaakgroep games mee ontworpen. Mijn taak in het groepje was mapdesign en hier wil ik mezelf ook graag in specialiseren.</p>
+            <a id="thirdbtn" href="Specialisaties.html">Specialisaties</a>
+        </div>
+        <img id="thirdimg" src="ue.png">
+    </section>
+    <section id="contact">
+        <div>
+            <h2 id="fourthh2">Contact</h2>
+            <p id="fourthp">Je kan mij vinden op de volgende platformen:</p>
+            <p id="fourthp">Email: 438832@student.fontys.nl</p>
+        </div>
+        <img id="fourthimg" src="ns.png">
+    </section>
+
+    <script type="text/javascript">
+    function toggle(){
+        var header = document.getElementById("header")
+        header.classList.toggle('active')
+    }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
+    <script src="gsapscript.js"></script>
+        
+</body>
+</html>

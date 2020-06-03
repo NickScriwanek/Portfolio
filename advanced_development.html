@@ -1,0 +1,95 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="ns.png" href="index.html" width='100px'>
+        <ul>
+            <li><a href="index.html" onclick="toggle()">Terug naar Home</a></li>
+            <li><a href="#animejs" class= "active" onclick="toggle()">AnimeJS</a></li>
+            <li><a href="#slickjs" onclick="toggle()">SlickJS</a></li>
+            <li><a href="#bideojs" onclick="toggle()">BideoJS</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="animejs">
+        <div>
+            <h2>AnimeJS</h2>
+            <p>Ik heb AnimeJS gekozen, omdat ik mijn portfolio levendiger wil maken. Met AnimeJS kan je vloeiende animaties maken van tekst, vormen en meer, dus vandaar dat ik deze library heb gekozen. </p>
+        </div>
+        <img class="spin" src="ns.png">
+    </section>
+    <section id="slickjs">
+        <div>
+            <h2>SlickJS</h2>
+            <div class="slickclass">
+                <div>
+                    <img src="logo1.png">
+                </div>
+                <div>
+                    <img src="logo2.png">
+                </div>
+                <div>
+                    <img src="ns.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bideojs">
+        <div>
+            <h2>BideoJS</h2>
+            <video id="background_video" loop muted></video>
+            <div id="video_cover"></div>
+            <div id="overlay"></div>
+            <section id="main_content">
+                <div id="head">
+                  <h1>Bideo.js</h1>
+                  <p class="sub_head">Met deze library kan je video's als background video's gebruiken (vandaar ook Bideo)<p>
+                </div>
+            </div> 
+
+        
+        </div>
+    </section>
+    <section id="skills">
+        <div>
+            <h2>???</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia iusto sunt recusandae consectetur. Sapiente nam doloremque earum distinctio et accusantium! Omnis amet, doloremque quaerat asperiores laborum quasi esse odit.</p>   
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <h2>???</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptas soluta dolorum numquam neque rerum excepturi obcaecati eum! Sequi voluptas sint beatae laborum repudiandae id corrupti deleniti deserunt facere architecto!</p>
+        </div>
+    </section>
+    <script type="text/javascript">
+    function toggle(){
+        var header = document.getElementById("header")
+        header.classList.toggle('active')
+    }
+    </script>
+    <script src="anime.min.js"></script>
+    <script src="animescript.js"></script>
+    <script src="bideo.js"></script>
+    <script src="main.js"></script>
+
+    <script src="jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="slick.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slickscript').slick({
+                dots:true,
+                arrows:false,
+                autoplay:true,
+                autoplaySpeed: 1000
+        });
+        });
+    </script>
+</body>
+</html>
