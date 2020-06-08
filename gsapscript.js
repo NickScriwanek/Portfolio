@@ -287,7 +287,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#fifthp", {
     scrollTrigger: {
-      trigger: "#fiftp",
+      trigger: "#fifthp",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -325,3 +325,71 @@ gsap.registerPlugin(ScrollTrigger);
       ease: "expo.out",
       scale: 0.1
       })
+
+ //Animation sixth section
+  gsap.from("#sixthh2", {
+    scrollTrigger: {
+      trigger: "#sixthh2",
+      start: "20px, 80%",
+      scrub: 1,
+      toggleActions: "restart pause resume pause"
+    },
+    opacity: 0,
+    x: 50,
+    ease: "expo.out"
+    })
+  
+    gsap.from("#sixthp", {
+    scrollTrigger: {
+      trigger: "#sixthp",
+      start: "20px, 80%",
+      scrub: 1,
+      toggleActions: "restart pause resume pause",
+      delay: 1
+    },
+    opacity: 0,
+    x: -50,
+    ease: "expo.out"
+    })
+  
+    gsap.from("#sixthimg", {
+    scrollTrigger: {
+      trigger: "#sixthimg",
+      start: "20px, 80%",
+      scrub: 1,
+      toggleActions: "restart pause resume pause",
+      delay: 2,
+    },
+    opacity: 0,
+    x: 50,
+    ease: "expo.out",
+    scale: 0.1
+    })
+
+    gsap.from("#sixthbtn", {
+      scrollTrigger: {
+        trigger: "#sixthbtn",
+        start: "20px, 80%",
+        scrub: 1,
+        toggleActions: "restart pause resume pause",
+        delay: 2,
+      },
+      opacity: 0,
+      x: 50,
+      ease: "expo.out",
+      scale: 0.1
+      })
+
+      gsap.from("#interview", {
+        scrollTrigger: {
+          trigger: "#interview",
+          start: "20px, 80%",
+          scrub: 1,
+          toggleActions: "restart pause resume pause",
+          delay: 2,
+        },
+        opacity: 0,
+        x: 50,
+        ease: "expo.out",
+        scale: 3
+        })
