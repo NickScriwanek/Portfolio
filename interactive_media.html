@@ -2,20 +2,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leeruitkomsten</title>
+    <title>Interactive Media</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header">
         <img src="ns.png" id="nslogo">
         <ul>
-            <li><a href="leeruitkomsten.html" onclick="toggle()">TERUG NAAR LEERUITKOMSTEN</a></li>
-            <li><a href="#interactive_media" class= "active" onclick="toggle()">INTERACTIVE MEDIA</a></li>
-            <li><a href="#interviews" onclick="toggle()">INTERVIEWS</a></li>
-            <li><a href="#app" onclick="toggle()">APP DESIGN</a></li>
-            <li><a href="#posters" onclick="toggle()">POSTER DESIGN</a></li>
-            <li><a href="#gamification" onclick="toggle()">GAMIFICATION</a></li>
-            <li><a href="#sprintx" onclick="toggle()">SPRINT X</a></li>
+            <li><a href="leeruitkomsten.html" id="leeruitkomstenNav" onclick="toggle('leeruitkomstenNav')">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="#interactive_media" id="interactieve_mediaNav" class= "active" onclick="toggle('interactieve_mediaNav')">INTERACTIVE MEDIA</a></li>
+            <li><a href="#interviews" id="interviewsNav" onclick="toggle('interviewsNav')">INTERVIEWS</a></li>
+            <li><a href="#app" id="appNav" onclick="toggle('appNav')">APP DESIGN</a></li>
+            <li><a href="#posters" id="postersNav" onclick="toggle('postersNav')">POSTER DESIGN</a></li>
+            <li><a href="#gamification" id="gamificationNav" onclick="toggle('gamificationNav')">GAMIFICATION</a></li>
+            <li><a href="#sprintx" id="sprintxNav" onclick="toggle('sprintxNav')">SPRINT X</a></li>
+            <li><a href="#reflectie" id="reflectieNav" onclick="toggle('reflectieNav')">ZELFREFLECTIE</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
@@ -156,7 +157,6 @@
           Sorry, your browser does not support the &lt;video&gt;
           </div>
           </video>
-
     </section>
     <section id="sprintx">
         <div>
@@ -165,12 +165,23 @@
             </p>
         </div>
     </section>
+    <section id="reflectie">
+        <div>
+            <h2 id="sixthh2">Mijn zelfreflectie</h2>
+            <p id="sixthp">Ik vond sinds semester 1 het idee van het verbeteren d.m.v. iteraties al fascinerend en ik vind het proces ook erg interessant. Zo zie je hoe je eerste versie van je laatste versie verschilt, hoe je tot het eindproduct bent gekomen en wat je ervan hebt geleerd. Ik had voor semester 2 nog geen ervaring met het ontwerpen van een UI of een App of het maken van een poster. Nu ik zie hoe ver ik hier in ben gegroeid door deze opleiding, ben ik best wel trots op mezelf. Ik ben erg tevreden over de laatste versie van de app en de posters en ik wil me graag in semester 3 meer verdiepen in gamedesign. Wel zal ik de volgende keer meer prototypes maken, zodat je een nog beter beeld krijgt van het proces en wil ik in het vervolg meer mensen interviewen. Ik had namelijk ook een Google Forms interview gemaakt, maar die is helaas plotseling verwijderd.</p>
+        </div>
+    </section>
+
     <script type="text/javascript">
-    function toggle(){
-        var header = document.getElementById("header")
-        header.classList.toggle('active')
-    }
-    </script>
+        var previousSectionID = document.getElementById("leeruitkomstenNav");
+        
+        function toggle(f_sectionID){
+            previousSectionID.classList.remove('active');
+            var sectionID = document.getElementById(f_sectionID);
+            sectionID.classList.add('active');
+            previousSectionID = sectionID;
+        }
+        </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>

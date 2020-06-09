@@ -393,3 +393,109 @@ gsap.registerPlugin(ScrollTrigger);
         ease: "expo.out",
         scale: 3
         })
+
+        gsap.from("#eighth2", {
+          scrollTrigger: {
+            trigger: "#eighthh2",
+            start: "20px, 80%",
+            scrub: 1,
+            toggleActions: "restart pause resume pause"
+          },
+          opacity: 0,
+          x: 50,
+          ease: "expo.out"
+          })
+        
+          gsap.from("#eighthp", {
+          scrollTrigger: {
+            trigger: "#eighthp",
+            start: "20px, 80%",
+            scrub: 1,
+            toggleActions: "restart pause resume pause",
+            delay: 1
+          },
+          opacity: 0,
+          x: -50,
+          ease: "expo.out"
+          })
+        
+          gsap.from("#eighthimg", {
+          scrollTrigger: {
+            trigger: "#eighthimg",
+            start: "20px, 80%",
+            scrub: 1,
+            toggleActions: "restart pause resume pause",
+            delay: 2,
+          },
+          opacity: 0,
+          x: 50,
+          ease: "expo.out",
+          scale: 0.1
+          })
+      
+          gsap.from("#eighthbtn", {
+            scrollTrigger: {
+              trigger: "#eighthbtn",
+              start: "20px, 80%",
+              scrub: 1,
+              toggleActions: "restart pause resume pause",
+              delay: 2,
+            },
+            opacity: 0,
+            x: 50,
+            ease: "expo.out",
+            scale: 0.1
+            })
+
+            gsap.from("#seventh2", {
+              scrollTrigger: {
+                trigger: "#seventhh2",
+                start: "20px, 80%",
+                scrub: 1,
+                toggleActions: "restart pause resume pause"
+              },
+              opacity: 0,
+              x: 50,
+              ease: "expo.out"
+              })
+            
+              gsap.from("#seventhp", {
+              scrollTrigger: {
+                trigger: "#seventhp",
+                start: "20px, 80%",
+                scrub: 1,
+                toggleActions: "restart pause resume pause",
+                delay: 1
+              },
+              opacity: 0,
+              x: -50,
+              ease: "expo.out"
+              })
+            
+              gsap.from("#seventhimg", {
+              scrollTrigger: {
+                trigger: "#seventhimg",
+                start: "20px, 80%",
+                scrub: 1,
+                toggleActions: "restart pause resume pause",
+                delay: 2,
+              },
+              opacity: 0,
+              x: 50,
+              ease: "expo.out",
+              scale: 0.1
+              })
+          
+              gsap.from("#seventhbtn", {
+                scrollTrigger: {
+                  trigger: "#seventhbtn",
+                  start: "20px, 80%",
+                  scrub: 1,
+                  toggleActions: "restart pause resume pause",
+                  delay: 2,
+                },
+                opacity: 0,
+                x: 50,
+                ease: "expo.out",
+                scale: 0.1
+                })

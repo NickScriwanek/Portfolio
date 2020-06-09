@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leeruitkomsten</title>
+    <title>Design</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,6 +12,7 @@
             <li><a href="leeruitkomsten.html" onclick="toggle()">TERUG NAAR LEERUITKOMSTEN</a></li>
             <li><a href="#app" onclick="toggle()">APP DESIGN</a></li>
             <li><a href="#posters" onclick="toggle()">POSTER DESIGN</a></li>
+            <li><a href="#logos" onclick="toggle()">LOGOS</a></li>
             <li><a href="#gamification" onclick="toggle()">GAMIFICATION</a></li>
             <li><a href="#sprintx" onclick="toggle()">SPRINT X</a></li>
         </ul>
@@ -95,13 +96,20 @@
         <img id="fifthimg" src="poster1.png">
         <img id="fifthimg" src="poster2.png">
     </section>
-    
+    <section id="logos">
+        <div>
+            <h2 id="landingh2">LOGOS</h2>
+            <p id="landingp">Ik heb ook een aantal logo's ontworpen voor Drip. Het eerste logo heeft de 'd' en de 'p' van 'drip' in elkaar en het symboliseert de stroom van water. Het tweede logo spelt 'drip', waarin het eerste logo is verwerkt. Deze prototypes zijn niet in het eindproduct geberuikt.</p>
+        </div>
+        <img id="sixthh2" src="drip1.png">
+        <img id="sixthh2" src="drip2.png">
+    </section>
     <section id="gamification">
         <div>
-            <h2 id="sixthh2">Gamification</h2>
-            <p id="sixthp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel tijd moeten stoppen. Hier heb ik uren van video van zitten bekijken, zodat ik het een beetje onder de knie kreeg. Als het mogelijk is, zou ik graag in verdere semesters meer met Game Design doen, zodat ik me meer in Unreal Engine kan ontwikkelen.</p>   
+            <h2 id="seventhh2">Gamification</h2>
+            <p id="seventhp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel tijd moeten stoppen. Hier heb ik uren van video van zitten bekijken, zodat ik het een beetje onder de knie kreeg. Als het mogelijk is, zou ik graag in verdere semesters meer met Game Design doen, zodat ik me meer in Unreal Engine kan ontwikkelen.</p>   
         </div>
-        <video id="sixthimg" controls width="1080">
+        <video id="seventhimg" controls width="1080">
             <source src="gamification.mp4" type="video/mp4">
           <div style="border: 1px solid black ; padding: 8px ;">
           Sorry, your browser does not support the &lt;video&gt;
@@ -111,17 +119,21 @@
     </section>
     <section id="sprintx">
         <div>
-            <h2 id="fifthh2">Sprint X</h2>
-            <p id="fifthp">In Sprint X heb ik een interactieve Bibliotheek in Virtual Reality gemaakt. Zo kan je zien wat ik thuis in mijn boekenkast heb staan en kan je de boeken zelf ook lezen.
+            <h2 id="eighthh2">Sprint X</h2>
+            <p id="eighthp">In Sprint X heb ik een interactieve Bibliotheek in Virtual Reality gemaakt. Zo kan je zien wat ik thuis in mijn boekenkast heb staan en kan je de boeken zelf ook lezen.
             </p>
         </div>
     </section>
     <script type="text/javascript">
-    function toggle(){
-        var header = document.getElementById("header")
-        header.classList.toggle('active')
-    }
-    </script>
+        var previousSectionID = document.getElementById("homeNav");
+        
+        function toggle(f_sectionID){
+            previousSectionID.classList.remove('active');
+            var sectionID = document.getElementById(f_sectionID);
+            sectionID.classList.add('active');
+            previousSectionID = sectionID;
+        }
+        </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
