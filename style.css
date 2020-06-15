@@ -80,7 +80,7 @@ section p
 {
     font-size: 18px;
     margin-top: 3%;
-    margin-right: 800px;
+    margin-right: 300px;
 }
 section a
 {
@@ -151,7 +151,7 @@ section:nth-child(odd)
         transition: 0.5s;
         background: #111;
         flex-direction: column;
-        opacity: 0s;
+        opacity: 0;
         transform: translateY(-100%);
     }
     header.active ul

@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +7,27 @@
 </head>
 <body>
     <header id="header">
-        <img src="ns.png" href="index.html" width='100px'>
+        <a href="index.html">
+            <img src="ns.png" href="index.html">
+        </a>
         <ul>
-            <li><a href="index.html" onclick="toggle()">PORTFOLIO</a></li>
-            <li><a href="#toelichting" class= "active" onclick="toggle()">TOELICHTING</a></li>
-            <li><a href="#gsap" onclick="toggle()">GSAP</a></li>
-            <li><a href="#animejs" onclick="toggle()">ANIMEJS</a></li>
-            <li><a href="#slickjs" onclick="toggle()">SLICKJS</a></li>
-            <li><a href="#bideojs" onclick="toggle()">BIDEOJS</a></li>
+            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="#landing" id="landingNav" class= "active" onclick="toggle('landingNav')">TOELICHTING</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">GSAP</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">ANIMEJS</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">SLICKJS</a></li>
+            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">BIDEOJS</a></li>
             <li><a href="https://git.fhict.nl/I438832/portfolio" onclick="toggle()">GITLAB</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="toelichting">
+    <section id="landing">
         <div>
             <h2>TOELICHTING</h2>
             <p>Ik heb deze specialisatie gekozen zodat ik mijn portfolio wat levendiger kan maken door animaties. Om deze reden heb ik me vooral gefocust op visuele libraries, zoals AnimeJS en GSAP.Ik heb besloten om GSAP (Green Sock Animation Platform) te gebruiken voor mijn laatste opdracht voor Advanced Development, omdat het compatibel is met zowat alle browsers, erg snel is en vele opties heeft. Ik had graag meer willen uitwerken, waaronder DrawSVG waarmee ik mijn headers getekend wilde hebben, maar helaas zijn dat betaalde functies van GSAP. Ik heb deze library uitgewerkt in mijn portfolio, zodat de specialisatie ook daadwerkelijk iets toevoegt aan mijn portfolio. Dit heb ik gerealiseerd met standaard animaties, scrub animaties en scroll animaties. Uit de vele mogelijkheden die GSAP biedt, heb ik er een aantal in mijn Portfolio verwerkt en deze kan je bekijken door op de 'portfolio' knop in de header te klikken.</p>
         </div>
     </section>
-    <section id="gsap">
+    <section id="first">
         <div>
             <h2>GSAP</h2>
             <br>
@@ -59,14 +61,14 @@
             <a href="index.html">Klik hier</a>
         </div>
     </section>
-    <section id="animejs">
+    <section id="second">
         <div>
             <h2>AnimeJS</h2>
             <p>Ik heb AnimeJS gekozen voor mijn top drie, omdat ik mijn portfolio levendiger wil maken. Met AnimeJS kan je vloeiende animaties maken van tekst, vormen en meer, precies waar ik naar op zoek was voor mijn Portfolio. Vandaar dat ik deze library heb gekozen. </p>
         </div>
         <img class="spin" src="ns.png">
     </section>
-    <section id="slickjs">
+    <section id="third">
         <div>
             <h2>SlickJS</h2>
             <br>
@@ -85,7 +87,7 @@
             </div>
         </div>
     </section>
-    <section id="bideojs">
+    <section id="fourth">
         <div>
             <h2>BideoJS</h2>
             <video id="background_video" loop muted></video>
@@ -97,6 +99,7 @@
                   <p class="sub_head">Met BideoJS kan je video's als background video gebruiken (vandaar de naam Bideo, als in Background Video). Kennelijk werkt deze niet zo goed samen met mijn stylesheet, maar toch leuk het mij een leuk idee om uit te proberen.<p>
                 </div>
             </div> 
+            </section>
 
         
         </div>

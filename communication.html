@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,16 @@
 </head>
 <body>
     <header id="header">
-        <img src="ns.png" id="nslogo">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
         <ul>
-            <li><a href="leeruitkomsten.html" onclick="toggle()">TERUG NAAR LEERUITKOMSTEN</a></li>
-            <li><a href="#interactive_media" class= "active" onclick="toggle()">COMMUNICATION</a></li>
+            <li><a href="leeruitkomsten.html">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="landing" id="landingNav" class= "active" onclick="toggle('landingNav')">COMMUNICATION</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="interactive_media">
+    <section id="landing">
         <div>
             <h2 id="landingh2">Communication</h2>
             <p id="landingp">Ik heb met mijn proftaakcollega’s duidelijke afspraken gemaakt over wanneer we de Standup en Sitdown hebben en die afspraak ben ik altijd nagekomen. Ook geven we elkaar feedback op elkaar’s werk en passen we deze feedback toe. 

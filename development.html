@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,24 @@
 </head>
 <body>
     <header id="header">
-        <img src="ns.png" href="index.html" width='100px'>
+        <a href="index.html">
+            <img src="ns.png" href="index.html">
+        </a>
         <ul>
-            <li><a href="index.html" onclick="toggle()">TERUG NAAR HOME</a></li>
-            <li><a href="#welkom" class= "active" onclick="toggle()">WELKOM</a></li>
-            <li><a href="#advanced_development" onclick="toggle()">ADVANCED DEVELOPMENT</a></li>
+            <li><a href="index.html">TERUG NAAR HOME</a></li>
+            <li><a href="#landing" id="landingNav" class= "active" onclick="toggle('landingNav')">WELKOM</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">ADVANCED DEVELOPMENT</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">DEVELOPMENT</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="welkom">
+    <section id="landing">
         <div>
             <h2 id="landingh2">Development</h2>
             <p id="landingp">Hier zie je mijn mediaproducten voor Development</p>
         </div>
     </section>
-    <section id="advanced_development">
+    <section id="first">
         <div>
             <h2 id="firsth2">Advanced development</h2>
             <p id="firsth2">Ik heb mijn portfolio geanimeerd met GSAP, zie hier mijn Advanced Development.</p>
@@ -29,7 +32,7 @@
         </div>
         <img id="firstimg" src="gsapimg.png">
     </section>
-    <section id="development">
+    <section id="second">
         <div>
             <h2 id="secondh2">Header selector</h2>
             <p id="secondp">Ik heb met JavaScript de header selector (blauwe tegels in de header) geprogrammeerd zonder een library te gebruiken. Deze kan je werkend zien op de voorpagina van mijn portfolio. Als je klikt op een kopje in de header, wordt het kopje blauw en blijft de rest zwart.</p>

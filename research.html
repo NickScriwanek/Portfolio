@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +7,28 @@
 </head>
 <body>
     <header id="header">
-        <img src="ns.png" id="nslogo">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
         <ul>
-            <li><a href="leeruitkomsten.html" onclick="toggle()">TERUG NAAR LEERUITKOMSTEN</a></li>
-            <li><a href="#research" onclick="toggle()">RESEARCH</a></li>
-            <li><a href="#library" class= "active" onclick="toggle()">LIBRARY</a></li>
-            <li><a href="#field" onclick="toggle()">FIELD</a></li>
-            <li><a href="#lab" onclick="toggle()">LAB</a></li>
-            <li><a href="#showroom" onclick="toggle()">SHOWROOM</a></li>
-            <li><a href="#workshop" onclick="toggle()">WORKSHOP</a></li>
+            <li><a href="leeruitkomsten.html">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="#landing" id="landingNav" onclick="toggle('landingNav')">RESEARCH</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">LIBRARY</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">FIELD</a></li>
+            <li><a href="#third" id="thirdNav" class="active" onclick="toggle('thirdNav')">LAB</a></li>
+            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">SHOWROOM</a></li>
+            <li><a href="#fifth" id="fifthNav" onclick="toggle('fifthNav')">WORKSHOP</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="library">
+    <section id="landing">
         <div>
             <h2 id="landingh2">Research</h2>
             <p id="landingp">Ik heb een uitgebreid doelgroeponderzoek gedaan, zodat we een idee krijgen op welke sociale media onze doelgroep zit en waar we het beste op kunnen adverteren en op welke manier. Zo heb ik ideele posters ontworpen en commerciele posters: de ideele posters voor mensen die nog niet bezig zijn met- of bewust zijn van hun waterverbruik, om ze aan het denken te zetten over de actuele situatie omtrend waterschaarste en droogte en de commerciele posters om de mensen die al op de hoogte zijn van het milieu en de droogte tot kopen te motiveren.</p>
         </div>
         <img id="landingimg" src="">
     </section>
-    <section id="library">
+    <section id="first">
         <div>
             <h2 id="firsth2">NIEUWSBERICHTEN</h2>
             <p id="firstp">Verder heb ik onderzoek gedaan naar de actuele waterproblemen in Nederland. Deze nieuwsberichten zijn allemaal gepubliceerd in 2020 en ze zijn niet alleen gericht op bedrijven, maar ook op huishoudens. Deze berichten kunnen we ook adverteren, zodat mensen bewuster worden van de actuele waterproblemen in Nederland. 
@@ -47,10 +49,10 @@
         </div>
         <img src="" id="interview">
     </section>
-    <section id="field">
+    <section id="second">
         <div>
-            <h2 id="firsth2">Interviews</h2>
-            <p id="firstp">Ik heb in sprint 0 een doelgroep interview geschreven met 9 vragen, om erachter te komen of we de juiste doelgroep voor ogen hebben, om erachter te komen wat de behoeften zijn van de doelgroep en om erachter te komen hoeveel de doelgroep voor het product over heeft.
+            <h2 id="secondh2">Interviews</h2>
+            <p id="secondp">Ik heb in sprint 0 een doelgroep interview geschreven met 9 vragen, om erachter te komen of we de juiste doelgroep voor ogen hebben, om erachter te komen wat de behoeften zijn van de doelgroep en om erachter te komen hoeveel de doelgroep voor het product over heeft.
                 <br>
                 <br>
                 Vraag 1: Ten eerste wilde ik weten of de persoon al smart-apparaten in huis had en of dat de resultaten van het onderzoek zou beïnvloeden. 
@@ -83,22 +85,22 @@
     </section>
     <section>
         <div>
-            <h2 id="firsth2">Resultaten</h2>
-            <p id="firstp"> Uit de interviews is gebleken dat studenten met een huurwoning niet bij onze doelgroep horen, aangezien de waterkosten inbegrepen zijn bij de huurkosten. Verder zien we dat de betalingsbereidheid erg verschilt en dat de doelgroep op deze leeftijd geen behoefte heeft aan een smarthub. Vervolgens zien we dat deze personen bovengemiddeld lang douchen, aangezien het landelijk gemiddelde ligt rond de 9 minuten en onze testpersonen minimaal 15 minuten douchen. Ten slotte zien we wel dat de personen op de hoogte zijn van de milieuproblemen rond water en dat ze best hun steentje willen bijdragen om de waterproblemen op te lossen.</p>
+            <h2 id="secondh2">Resultaten</h2>
+            <p id="secondp"> Uit de interviews is gebleken dat studenten met een huurwoning niet bij onze doelgroep horen, aangezien de waterkosten inbegrepen zijn bij de huurkosten. Verder zien we dat de betalingsbereidheid erg verschilt en dat de doelgroep op deze leeftijd geen behoefte heeft aan een smarthub. Vervolgens zien we dat deze personen bovengemiddeld lang douchen, aangezien het landelijk gemiddelde ligt rond de 9 minuten en onze testpersonen minimaal 15 minuten douchen. Ten slotte zien we wel dat de personen op de hoogte zijn van de milieuproblemen rond water en dat ze best hun steentje willen bijdragen om de waterproblemen op te lossen.</p>
             <br>
             <br>
-            <h2 id="firsth2">Conclusie</h2>
-            <p id="firstp">Door dit onderzoek ben ik erachter gekomen dat onze doelgroep niet studenten is met een huurwoning, maar mensen tussen de 25-35 jaar met een koopwoning. Waterkosten zitten namelijk bij een huurwoning inbegrepen en daar maken studenten zich vaak geen zorgen om. Verder hebben studenten een niet bepaald hoge betalingsbereidheid voor het product, aangezien ze geen baat hebben bij het investeren in een huurhuis, omdat het toch niet hun woning is.  Uit ons onderzoek is gebleken dat mensen tussen de 25 en 35 jaar hoog scoren op ‘early adoption’ en dus vaak in nieuwe technologieën investeren en ik denk dat ons product daar mooi binnen past.</p>
+            <h2 id="secondh2">Conclusie</h2>
+            <p id="secondp">Door dit onderzoek ben ik erachter gekomen dat onze doelgroep niet studenten is met een huurwoning, maar mensen tussen de 25-35 jaar met een koopwoning. Waterkosten zitten namelijk bij een huurwoning inbegrepen en daar maken studenten zich vaak geen zorgen om. Verder hebben studenten een niet bepaald hoge betalingsbereidheid voor het product, aangezien ze geen baat hebben bij het investeren in een huurhuis, omdat het toch niet hun woning is.  Uit ons onderzoek is gebleken dat mensen tussen de 25 en 35 jaar hoog scoren op ‘early adoption’ en dus vaak in nieuwe technologieën investeren en ik denk dat ons product daar mooi binnen past.</p>
         </div>
-        <img id="firstimg" src="resultaat1.PNG">
-        <img id="firstimg" src="resultaat2.PNG">
+        <img id="secondimg" src="resultaat1.PNG">
+        <img id="secondimg" src="resultaat2.PNG">
     </section>
-    <section id="lab">
+    <section id="third">
         <div>
-            <h2 id="secondh2">App design V1</h2>
-            <p id="secondp">Een voorbeeld van labonderzoek die ik heb toegepast, is van de Drip app. Ik heb mensen de app laten uitproberen en ik heb op basis van hun feedback de app aangepast. Voor het ontwerp van de app begon ik eerst met een barebones prototype. Dit prototype heb ik vervolgens aan mensen laten zien die ons product / project helemaal niet kennen, om te kijken of ze snappen dat het een app is over het besparen van water. Verder vroeg ik ook nog om visuele feedback, zodat de app overzichtelijker en mooier wordt.
+            <h2 id="thirdh2">App design V1</h2>
+            <p id="thirdp">Een voorbeeld van labonderzoek die ik heb toegepast, is van de Drip app. Ik heb mensen de app laten uitproberen en ik heb op basis van hun feedback de app aangepast. Voor het ontwerp van de app begon ik eerst met een barebones prototype. Dit prototype heb ik vervolgens aan mensen laten zien die ons product / project helemaal niet kennen, om te kijken of ze snappen dat het een app is over het besparen van water. Verder vroeg ik ook nog om visuele feedback, zodat de app overzichtelijker en mooier wordt.
         </div>
-        <img id="secondimg" src="appv1.png">
+        <img id="thirdimg" src="appv1.png">
     </section>
     <section>
         <div>
@@ -135,7 +137,7 @@
         <img id="secondimg" src="appv4.2.png">
     </section>
 
-    <section id="workshop">
+    <section id="fourth">
         <div>
             <h2 id="thirdh2">Poster design</h2>
             <p id="thirdp">Ik heb een aantal prototypes van posters gemaakt om te kijken of dit de doelgroep zou aanspreken.</p>
@@ -164,6 +166,11 @@
         </div>
         <img id="fifthimg" src="poster1.png">
         <img id="fifthimg" src="poster2.png">
+    </section>
+    <section id="fifth">
+        <div>
+            <h2 id="fifthh2">Workshop</h2>
+        </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>

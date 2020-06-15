@@ -44,7 +44,7 @@ gsap.registerPlugin(ScrollTrigger);
 //Animation first section
   gsap.from("#firsth2", {
   scrollTrigger: {
-    trigger: "#firsth2",
+    trigger: "#first",
     start: "20px, 80%",
     scrub: 1,
     toggleActions: "restart pause resume pause"
@@ -56,7 +56,7 @@ gsap.registerPlugin(ScrollTrigger);
 
   gsap.from("#firstp", {
   scrollTrigger: {
-    trigger: "#firstp",
+    trigger: "#first",
     start: "20px, 80%",
     scrub: 1,
     toggleActions: "restart pause resume pause",
@@ -68,7 +68,7 @@ gsap.registerPlugin(ScrollTrigger);
   })
   gsap.from("#firstimg", {
   scrollTrigger: {
-    trigger: "#firstimg",
+    trigger: "#first",
     start: "20px, 80%",
     scrub: 1,
     toggleActions: "restart pause resume pause",
@@ -83,7 +83,7 @@ gsap.registerPlugin(ScrollTrigger);
 
   gsap.from("#firstbtn", {
     scrollTrigger: {
-      trigger: "#firstbtn",
+      trigger: "#first",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -98,7 +98,7 @@ gsap.registerPlugin(ScrollTrigger);
 //Animation second section
   gsap.from("#secondh2", {
     scrollTrigger: {
-      trigger: "#secondh2",
+      trigger: "#second",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause"
@@ -110,7 +110,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#secondp", {
     scrollTrigger: {
-      trigger: "#secondp",
+      trigger: "#second",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -123,7 +123,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#secondimg", {
     scrollTrigger: {
-      trigger: "#secondimg",
+      trigger: "#second",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -138,7 +138,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     gsap.from("#secondbtn", {
       scrollTrigger: {
-        trigger: "#secondbtn",
+        trigger: "#second",
         start: "20px, 80%",
         scrub: 1,
         toggleActions: "restart pause resume pause",
@@ -153,7 +153,7 @@ gsap.registerPlugin(ScrollTrigger);
     //Animation third section
   gsap.from("#thirdh2", {
     scrollTrigger: {
-      trigger: "#thirdh2",
+      trigger: "#third",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause"
@@ -165,7 +165,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#thirdp", {
     scrollTrigger: {
-      trigger: "#thirdp",
+      trigger: "#third",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -178,7 +178,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#thirdimg", {
     scrollTrigger: {
-      trigger: "#thirdimg",
+      trigger: "#third",
       scrub: 1,
       toggleActions: "restart pause resume pause",
       delay: 2,
@@ -192,7 +192,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     gsap.from("#thirdbtn", {
       scrollTrigger: {
-        trigger: "#thirdbtn",
+        trigger: "#third",
         start: "20px, 80%",
         scrub: 1,
         toggleActions: "restart pause resume pause",
@@ -206,7 +206,7 @@ gsap.registerPlugin(ScrollTrigger);
     //Animation fourth section
   gsap.from("#fourthh2", {
     scrollTrigger: {
-      trigger: "#fourthh2",
+      trigger: "#fourth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause"
@@ -218,7 +218,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#fourthp", {
     scrollTrigger: {
-      trigger: "#fourthp",
+      trigger: "#fourth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -231,7 +231,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#fourthimg", {
     scrollTrigger: {
-      trigger: "#fourthimg",
+      trigger: "#fourth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -245,7 +245,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     gsap.from("#fourthbtn", {
       scrollTrigger: {
-        trigger: "#firstbtn",
+        trigger: "#fourth",
         start: "20px, 80%",
         scrub: 1,
         toggleActions: "restart pause resume pause",
@@ -259,7 +259,7 @@ gsap.registerPlugin(ScrollTrigger);
 
       gsap.from("#line", {
         scrollTrigger: {
-          trigger: "#line",
+          trigger: "#fourth",
           start: "20px, 80%",
           scrub: 1,
           toggleActions: "restart pause resume pause",
@@ -275,7 +275,7 @@ gsap.registerPlugin(ScrollTrigger);
             //Animation fifth section
   gsap.from("#fifthh2", {
     scrollTrigger: {
-      trigger: "#fifthh2",
+      trigger: "#fifth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause"
@@ -287,7 +287,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#fifthp", {
     scrollTrigger: {
-      trigger: "#fifthp",
+      trigger: "#fifth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -300,7 +300,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#fifthimg", {
     scrollTrigger: {
-      trigger: "#fifthimg",
+      trigger: "#fifth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -314,7 +314,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     gsap.from("#fifthbtn", {
       scrollTrigger: {
-        trigger: "#fifthbtn",
+        trigger: "#fifth",
         start: "20px, 80%",
         scrub: 1,
         toggleActions: "restart pause resume pause",
@@ -329,7 +329,7 @@ gsap.registerPlugin(ScrollTrigger);
  //Animation sixth section
   gsap.from("#sixthh2", {
     scrollTrigger: {
-      trigger: "#sixthh2",
+      trigger: "#sixth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause"
@@ -341,7 +341,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#sixthp", {
     scrollTrigger: {
-      trigger: "#sixthp",
+      trigger: "#sixth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -354,7 +354,7 @@ gsap.registerPlugin(ScrollTrigger);
   
     gsap.from("#sixthimg", {
     scrollTrigger: {
-      trigger: "#sixthimg",
+      trigger: "#sixth",
       start: "20px, 80%",
       scrub: 1,
       toggleActions: "restart pause resume pause",
@@ -368,7 +368,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     gsap.from("#sixthbtn", {
       scrollTrigger: {
-        trigger: "#sixthbtn",
+        trigger: "#sixth",
         start: "20px, 80%",
         scrub: 1,
         toggleActions: "restart pause resume pause",
@@ -382,7 +382,7 @@ gsap.registerPlugin(ScrollTrigger);
 
       gsap.from("#interview", {
         scrollTrigger: {
-          trigger: "#interview",
+          trigger: "#sixth",
           start: "20px, 80%",
           scrub: 1,
           toggleActions: "restart pause resume pause",
@@ -396,7 +396,7 @@ gsap.registerPlugin(ScrollTrigger);
 
         gsap.from("#eighth2", {
           scrollTrigger: {
-            trigger: "#eighthh2",
+            trigger: "#eighth",
             start: "20px, 80%",
             scrub: 1,
             toggleActions: "restart pause resume pause"
@@ -408,7 +408,7 @@ gsap.registerPlugin(ScrollTrigger);
         
           gsap.from("#eighthp", {
           scrollTrigger: {
-            trigger: "#eighthp",
+            trigger: "#eighth",
             start: "20px, 80%",
             scrub: 1,
             toggleActions: "restart pause resume pause",
@@ -421,7 +421,7 @@ gsap.registerPlugin(ScrollTrigger);
         
           gsap.from("#eighthimg", {
           scrollTrigger: {
-            trigger: "#eighthimg",
+            trigger: "#eighth",
             start: "20px, 80%",
             scrub: 1,
             toggleActions: "restart pause resume pause",
@@ -435,7 +435,7 @@ gsap.registerPlugin(ScrollTrigger);
       
           gsap.from("#eighthbtn", {
             scrollTrigger: {
-              trigger: "#eighthbtn",
+              trigger: "#eighth",
               start: "20px, 80%",
               scrub: 1,
               toggleActions: "restart pause resume pause",
@@ -449,7 +449,7 @@ gsap.registerPlugin(ScrollTrigger);
 
             gsap.from("#seventh2", {
               scrollTrigger: {
-                trigger: "#seventhh2",
+                trigger: "#seventh",
                 start: "20px, 80%",
                 scrub: 1,
                 toggleActions: "restart pause resume pause"
@@ -461,7 +461,7 @@ gsap.registerPlugin(ScrollTrigger);
             
               gsap.from("#seventhp", {
               scrollTrigger: {
-                trigger: "#seventhp",
+                trigger: "#seventh",
                 start: "20px, 80%",
                 scrub: 1,
                 toggleActions: "restart pause resume pause",
@@ -474,7 +474,7 @@ gsap.registerPlugin(ScrollTrigger);
             
               gsap.from("#seventhimg", {
               scrollTrigger: {
-                trigger: "#seventhimg",
+                trigger: "#seventh",
                 start: "20px, 80%",
                 scrub: 1,
                 toggleActions: "restart pause resume pause",
@@ -488,7 +488,7 @@ gsap.registerPlugin(ScrollTrigger);
           
               gsap.from("#seventhbtn", {
                 scrollTrigger: {
-                  trigger: "#seventhbtn",
+                  trigger: "#seventh",
                   start: "20px, 80%",
                   scrub: 1,
                   toggleActions: "restart pause resume pause",

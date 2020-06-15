@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +7,31 @@
 </head>
 <body>
     <header id="header">
-        <img src="ns.png" id="nslogo">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
         <ul>
-            <li><a href="leeruitkomsten.html" onclick="toggle()">TERUG NAAR LEERUITKOMSTEN</a></li>
-            <li><a href="#app" onclick="toggle()">APP DESIGN</a></li>
-            <li><a href="#posters" onclick="toggle()">POSTER DESIGN</a></li>
-            <li><a href="#logos" onclick="toggle()">LOGOS</a></li>
-            <li><a href="#gamification" onclick="toggle()">GAMIFICATION</a></li>
-            <li><a href="#sprintx" onclick="toggle()">SPRINT X</a></li>
+            <li><a href="leeruitkomsten.html">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="#landing" id="landingNav" onclick="toggle('landingNav')">APP DESIGN</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">POSTER DESIGN</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">LOGOS</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">GAMIFICATION</a></li>
+            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">SPRINT X</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="interactive_media">
+    <section id="landing">
         <div>
             <h2 id="landingh2">Design</h2>
             <p id="landingp">Hier zie je mijn mediaproducten voor Design</p>
         </div>
     </section>
-    <section id="app">
+    <section id="first">
         <div>
-            <h2 id="secondh2">App design V1</h2>
-            <p id="secondp">Voor het ontwerp van de app begon ik eerst met een barebones prototype. Dit prototype heb ik vervolgens aan mensen laten zien die ons product / project helemaal niet kennen, om te kijken of ze snappen dat het een app is over het besparen van water. Verder vroeg ik ook nog om visuele feedback, zodat de app overzichtelijker en mooier wordt.
+            <h2 id="firsth2">App design V1</h2>
+            <p id="firstp">Voor het ontwerp van de app begon ik eerst met een barebones prototype. Dit prototype heb ik vervolgens aan mensen laten zien die ons product / project helemaal niet kennen, om te kijken of ze snappen dat het een app is over het besparen van water. Verder vroeg ik ook nog om visuele feedback, zodat de app overzichtelijker en mooier wordt.
         </div>
-        <img id="secondimg" src="appv1.png">
+        <img id="first" src="appv1.png">
     </section>
     <section>
         <div>
@@ -66,7 +68,7 @@
         <img id="secondimg" src="appv4.2.png">
     </section>
 
-    <section id="posters">
+    <section id="second">
         <div>
             <h2 id="thirdh2">Poster design</h2>
             <p id="thirdp">Dit semester heb ik een aantal posters gemaakt om mensen aan het denken te zetten en om mensen over te halen om ons product aan te schaffen.</p>
@@ -96,7 +98,7 @@
         <img id="fifthimg" src="poster1.png">
         <img id="fifthimg" src="poster2.png">
     </section>
-    <section id="logos">
+    <section id="third">
         <div>
             <h2 id="landingh2">LOGOS</h2>
             <p id="landingp">Ik heb ook een aantal logo's ontworpen voor Drip. Het eerste logo heeft de 'd' en de 'p' van 'drip' in elkaar en het symboliseert de stroom van water. Het tweede logo spelt 'drip', waarin het eerste logo is verwerkt. Deze prototypes zijn niet in het eindproduct geberuikt.</p>
@@ -104,7 +106,7 @@
         <img id="sixthh2" src="drip1.png">
         <img id="sixthh2" src="drip2.png">
     </section>
-    <section id="gamification">
+    <section id="fourth">
         <div>
             <h2 id="seventhh2">Gamification</h2>
             <p id="seventhp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel tijd moeten stoppen. Hier heb ik uren van video van zitten bekijken, zodat ik het een beetje onder de knie kreeg. Als het mogelijk is, zou ik graag in verdere semesters meer met Game Design doen, zodat ik me meer in Unreal Engine kan ontwikkelen.</p>   
@@ -117,7 +119,7 @@
           </video>
 
     </section>
-    <section id="sprintx">
+    <section id="fifth">
         <div>
             <h2 id="eighthh2">Sprint X</h2>
             <p id="eighthp">In Sprint X heb ik een interactieve Bibliotheek in Virtual Reality gemaakt. Zo kan je zien wat ik thuis in mijn boekenkast heb staan en kan je de boeken zelf ook lezen.

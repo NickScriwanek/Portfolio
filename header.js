@@ -1,4 +1,4 @@
-    var previousSectionID = document.getElementById("homeNav");
+    var previousSectionID = document.getElementById("landingNav");
     
     function toggle(f_sectionID){
         previousSectionID.classList.remove('active');

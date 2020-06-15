@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +7,28 @@
 </head>
 <body>
     <header id="header">
-        <img src="ns.png" href="index.html" width='100px'>
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
         <ul>
-            <li><a href="index.html" onclick="toggle()">TERUG NAAR HOME</a></li>
-            <li><a href="#welkom" class= "active" onclick="toggle()">WELKOM</a></li>
-            <li><a href="#interactieve_media" onclick="toggle()">INTERACTIEVE MEDIA</a></li>
-            <li><a href="#development" onclick="toggle()">DEVELOPMENT</a></li>
-            <li><a href="#design" onclick="toggle()">DESIGN</a></li>
-            <li><a href="#research" onclick="toggle()">RESEARCH</a></li>
-            <li><a href="#communication" onclick="toggle()">COMMUNICATION</a></li>
-            <li><a href="#professional_identity" onclick="toggle()">PROFESSIONAL IDENTITY</a></li>
+            <li><a href="index.html">TERUG NAAR HOME</a></li>
+            <li><a href="#landingNav" id="landingNav" class="active" onclick="toggle('landingNav')">WELKOM</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">INTERACTIEVE MEDIA</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">DEVELOPMENT</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">DESIGN</a></li>
+            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">RESEARCH</a></li>
+            <li><a href="#fifth" id="fifthNav" onclick="toggle('fifthNav')">COMMUNICATION</a></li>
+            <li><a href="#sixth" id="sixthNav" onclick="toggle('sixthNav')">PROFESSIONAL IDENTITY</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="welkom">
+    <section id="landing">
         <div>
             <h2 id="landingh2">Welkom bij mijn leeruitkomsten!</h2>
             <p id="landingp">Op deze pagina ga je al mijn leeruitkomsten vinden</p>
         </div>
     </section>
-    <section id="interactieve_media">
+    <section id="first">
         <div>
             <h2 id="firsth2">Interactive Media</h2>
             <p id="firsth2">Ik heb dit semester weer meerdere malen feedback ontvangen, zodat ik door iteratieve processen tot een beter eindproduct kan komen. Ik heb onder andere een app ontworpen, posters ontworpen en een infographic gemaakt.</p>
@@ -36,7 +38,7 @@
         <img id="firstimg" src="appv4.2.png">
 
     </section>
-    <section id="development">
+    <section id="second">
         <div>
             <h2 id="secondh2">Development</h2>
             <p id="secondp">Dit semester heb ik HTML en CSS onder de knie gekregen (aangezien ik in het startsemester gefocust was op Gamedesign en C++). Verder heb ik met de Advanced Development specialisatie mijn portfolio interactiever en visueel aantrekkelijker gemaakt met behulp van […].</p>
@@ -45,7 +47,7 @@
         <img id="secondimg" src="gsapimg.png">
         
     </section>
-    <section id="design">
+    <section id="third">
         <div>
             <h2 id="thirdh2">Design</h2>
             <p id="thirdp">In dit semester heb ik o.a. Adobe XD, Photoshop, Illustrator en Unreal Engine gebruikt.</p>
@@ -53,7 +55,7 @@
         </div>
         <img id="thirdimg" src="poster1.png">
     </section>
-    <section id="research">
+    <section id="fourth">
         <div>
             <h2 id="fourthh2">Research</h2>
             <p id="fourthp">Dit semester heb ik uitgebreid onderzoek gedaan naar wie onze doelgroep is en wat onze doelgroep eigenlijk wil.</p>   
@@ -61,7 +63,7 @@
         </div>
         <img id="fourthimg" src="poster3.png">
     </section>
-    <section id="communication">
+    <section id="fifth">
         <div>
             <h2 id="fifthh2">Communication</h2>
             <p id="fifthp">Ik heb met mijn proftaakcollega’s duidelijke afspraken gemaakt over wanneer we de Standup en Sitdown hebben en die afspraak ben ik altijd nagekomen. Ook geven we elkaar feedback op elkaar’s werk en passen we deze feedback toe. 
@@ -71,7 +73,7 @@
             <a id="fifthbtn" href="communication.html">Meer info</a>
         </div>
     </section>
-    <section id="professional_identity">
+    <section id="sixth">
         <div>
             <h2 id="sixthh2">Professional Identity</h2>
             <p id="sixthp">Dit semester heb ik me behoorlijk ontwikkeld op het gebied van onderzoek doen en webdesign.</p>
