@@ -1,37 +1,50 @@
 ﻿<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Development</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
         <a href="index.html">
-            <img src="ns.png" href="index.html">
+            <img src="ns.png" id="nslogo" href="index.html">
         </a>
         <ul>
-            <li><a href="index.html">PORTFOLIO</a></li>
-            <li><a href="#landing" id="landingNav" class= "active" onclick="toggle('landingNav')">TOELICHTING</a></li>
+            <li><a href="development.html" id="backColor">TERUG NAAR DEVELOPMENT</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">TOELICHTING</a></li>
             <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">GSAP</a></li>
             <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">ANIMEJS</a></li>
             <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">SLICKJS</a></li>
             <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">BIDEOJS</a></li>
-            <li><a href="https://git.fhict.nl/I438832/portfolio" onclick="toggle()">GITLAB</a></li>
+            <li><a href="#fifth" id="fifthNav" onclick="toggle('fifthNav')">REFLECTIE</a></li>
+            <li><a href="#" id="gitColor">GITLAB</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
     <section id="landing">
         <div>
-            <h2>TOELICHTING</h2>
-            <p>Ik heb deze specialisatie gekozen zodat ik mijn portfolio wat levendiger kan maken door animaties. Om deze reden heb ik me vooral gefocust op visuele libraries, zoals AnimeJS en GSAP.Ik heb besloten om GSAP (Green Sock Animation Platform) te gebruiken voor mijn laatste opdracht voor Advanced Development, omdat het compatibel is met zowat alle browsers, erg snel is en vele opties heeft. Ik had graag meer willen uitwerken, waaronder DrawSVG waarmee ik mijn headers getekend wilde hebben, maar helaas zijn dat betaalde functies van GSAP. Ik heb deze library uitgewerkt in mijn portfolio, zodat de specialisatie ook daadwerkelijk iets toevoegt aan mijn portfolio. Dit heb ik gerealiseerd met standaard animaties, scrub animaties en scroll animaties. Uit de vele mogelijkheden die GSAP biedt, heb ik er een aantal in mijn Portfolio verwerkt en deze kan je bekijken door op de 'portfolio' knop in de header te klikken.</p>
+            <h2 id="landingh2">TOELICHTING</h2>
+            <p id="landingp">Ik heb deze specialisatie gekozen zodat ik mijn portfolio wat levendiger kan maken door
+                animaties. Om
+                deze reden heb ik me vooral gefocust op visuele libraries, zoals AnimeJS en GSAP.Ik heb besloten om GSAP
+                (Green Sock Animation Platform) te gebruiken voor mijn laatste opdracht voor Advanced Development, omdat
+                het compatibel is met zowat alle browsers, erg snel is en vele opties heeft. Ik had graag meer willen
+                uitwerken, waaronder DrawSVG waarmee ik mijn headers getekend wilde hebben, maar helaas zijn dat
+                betaalde functies van GSAP. Ik heb deze library uitgewerkt in mijn portfolio, zodat de specialisatie ook
+                daadwerkelijk iets toevoegt aan mijn portfolio. Dit heb ik gerealiseerd met standaard animaties, scrub
+                animaties en scroll animaties.</p>
         </div>
+        <img id="landingimg" src="gsapimg.png">
     </section>
     <section id="first">
         <div>
-            <h2>GSAP</h2>
+            <h2 id="firsth2">GSAP</h2>
             <br>
-            <h3>GSAP is een snelle, robuuste library waarmee je zonder al teveel code gemakkelijk voorwerpen kunt animeren. GSAP is gemakkelijk onder te knie te krijgen, ik zal even uitleggen hoe het werkt.</h3>
+            <h3>GSAP is een snelle, robuuste library waarmee je zonder al teveel code gemakkelijk voorwerpen kunt
+                animeren. GSAP is gemakkelijk onder te knie te krijgen, ik zal even uitleggen hoe het werkt.</h3>
             <br>
             <pre class="prettyprint">
                 gsap.from('#nslogo', {
@@ -43,7 +56,8 @@
                     ease:"expo.out"
                   });
                 </pre>
-            <h3>Dit is hoe een standaard GSAP animatie eruit ziet. In dit geval, is het de animatie van mijn logo in de header op mijn Portfolio. Ik zal even uitleggen welk element wat doet.</h3>
+            <h3>Dit is hoe een standaard GSAP animatie eruit ziet. In dit geval, is het de animatie van mijn logo in de
+                header op mijn Portfolio. Ik zal even uitleggen welk element wat doet.</h3>
             <br>
             <pre class="prettyprint">
                 gsap.richting('geanimeerde object', {
@@ -55,24 +69,35 @@
                     ease: hoe de animatie verloopt (verschillende effecten)
                   });
                 </pre>
-            <h3>Zoals je kan zien, heeft GSAP dus behoorlijk veel mogelijkheden. Van de richting van de animatie (eindpositie van animatie of juist de beginpositie) tot de manier hoe de animatie verloopt, de mogelijkheden zijn eindeloos. Dit is kort maar krachtig hoe GSAP in dit geval werkt. Er zijn nog veel meer mogelijkheden, maar als ik die allemaal uitwerk, dan zijn we hier nog wel even.</h3>
+            <h3>Zoals je kan zien, heeft GSAP dus behoorlijk veel mogelijkheden. Van de richting van de animatie
+                (eindpositie van animatie of juist de beginpositie) tot de manier hoe de animatie verloopt, de
+                mogelijkheden zijn eindeloos. Dit is kort maar krachtig hoe GSAP in dit geval werkt. Er zijn nog veel
+                meer mogelijkheden, maar als ik die allemaal uitwerk, dan zijn we hier nog wel even.</h3>
             <br>
-            <p>Om meer voorbeelden van GSAP te zien, kan je op mijn Portfolio kijken. Hierin heb ik verschillende soorten animaties gemaakt, zoals scrollanimaties, scrubanimaties en meer! Klik daarvoor op de knop op de header of de knop hieronder.</p>
+            <p>Om meer voorbeelden van GSAP te zien, kan je op mijn Portfolio kijken. Hierin heb ik verschillende
+                soorten animaties gemaakt, zoals scrollanimaties, scrubanimaties en meer! Klik daarvoor op de knop op de
+                header of de knop hieronder.</p>
             <a href="index.html">Klik hier</a>
         </div>
     </section>
     <section id="second">
         <div>
-            <h2>AnimeJS</h2>
-            <p>Ik heb AnimeJS gekozen voor mijn top drie, omdat ik mijn portfolio levendiger wil maken. Met AnimeJS kan je vloeiende animaties maken van tekst, vormen en meer, precies waar ik naar op zoek was voor mijn Portfolio. Vandaar dat ik deze library heb gekozen. </p>
+            <h2 id="secondh2">AnimeJS</h2>
+            <p id="secondp">Ik heb AnimeJS gekozen voor mijn top drie, omdat ik mijn portfolio levendiger wil maken. Met
+                AnimeJS kan
+                je vloeiende animaties maken van tekst, vormen en meer, precies waar ik naar op zoek was voor mijn
+                Portfolio. Echter vond ik GSAP wel prettiger om mee te werken, waardoor hij niet de gekozen library was
+                voor mijn eindopdracht. </p>
         </div>
         <img class="spin" src="ns.png">
     </section>
     <section id="third">
         <div>
-            <h2>SlickJS</h2>
+            <h2 id="thirdh2">SlickJS</h2>
             <br>
-            <p>Het is me helaas niet gelukt om Slick werkend te krijgen. Er zou nou een caroussel te zien moeten zijn, maar zelfs met hulp van andere medestudenten, krijg ik het niet werkend.</p>
+            <p id="thirdp">Het is me helaas niet gelukt om Slick werkend te krijgen. Er zou nou een caroussel te zien
+                moeten zijn,
+                maar zelfs met hulp van andere medestudenten, krijg ik het niet werkend.</p>
             <br>
             <div class="slickclass">
                 <div>
@@ -89,22 +114,33 @@
     </section>
     <section id="fourth">
         <div>
-            <h2>BideoJS</h2>
+            <h2 id="fourthh2">BideoJS</h2>
             <video id="background_video" loop muted></video>
             <div id="video_cover"></div>
             <div id="overlay"></div>
             <section id="main_content">
                 <div id="head">
-                  <h1>Bideo.js</h1>
-                  <p class="sub_head">Met BideoJS kan je video's als background video gebruiken (vandaar de naam Bideo, als in Background Video). Kennelijk werkt deze niet zo goed samen met mijn stylesheet, maar toch leuk het mij een leuk idee om uit te proberen.<p>
+                    <h1>Bideo.js</h1>
+                    <p class="sub_head" id="fourthp">Met BideoJS kan je video's als background video gebruiken (vandaar
+                        de naam
+                        Bideo, als in Background Video). Er waren weinig tutorials over te vinden, maar uiteindelijk heb
+                        ik het toch werkend gekregen. Kennelijk werkt deze niet zo goed samen met mijn stylesheet,
+                        maar toch leuk het mij een leuk idee om uit te proberen.<p>
                 </div>
-            </div> 
-            </section>
-
-        
         </div>
     </section>
-    
+    <section id="fifth">
+        <div>
+            <h2 id="fifthh2">Reflectie</h2>
+            <p id="fifthp">Ik vond deze specialisatie erg nuttig, omdat libraries coderen een stuk gemakkelijker maakt.
+                Ik had verwacht dat het wat moeilijker zou zijn, aangezien ik nog geen ervaring had met JavaScript, maar
+                achteraf gezien hadden ze het niet gemakkelijker kunnen maken. Ik heb geleerd hoe veel verschillende
+                libraries werken en ik had met mijn basiskennis van JavaScript deze POCs niet zonder de libraries na
+                kunnen maken. Ik ga libraries zeker vaker in de toekomst gebruiken en ik ben blij dat ik alvast wat
+                ervaring op heb kunnen doen.</p>
+        </div>
+    </section>
+
     <script src="anime.min.js"></script>
     <script src="animescript.js"></script>
     <script src="bideo.js"></script>
@@ -116,4 +152,5 @@
     <script src="gsapscript.js"></script>
     <script src="header.js"></script>
 </body>
+
 </html>

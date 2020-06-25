@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
+        <ul>
+            <li><a href="design.html" id="backColor">TERUG NAAR DESIGN</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">APP DESIGN V1</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">APP DESIGN V2</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">APP DESIGN V3</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">APP DESIGN V4</a></li>
+            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">REFLECTIE</a></li>
+
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="landing">
+        <div>
+            <h2 id="landingh2">App design V1</h2>
+            <p id="landingp">Voor het ontwerp van de app begon ik eerst met een barebones prototype. Dit prototype heb
+                ik vervolgens aan mensen laten zien die ons product / project helemaal niet kennen, om te kijken of ze
+                snappen dat het een app is over het besparen van water. Verder vroeg ik ook nog om visuele feedback,
+                zodat de app overzichtelijker en mooier wordt.
+        </div>
+        <img id="landingimg" src="appv1.png">
+    </section>
+    <section id="first">
+        <div>
+            <h2 id="firsth2">App design V2</h2>
+            <p id="firstp">
+                Uit de feedback van deze medestudenten zijn de volgende punten gekomen:
+                <br>
+                -De knoppen moeten in een aparte box, zodat het meer lijkt dat ze klikbaar zijn
+                <br>
+                -Rondere grafiek om de aesthetic bij elkaar te houden
+                <br>
+                -Meer kleuren toevoegen voor meer contrast
+                <br>
+                -De ‘dashboard’ header mag weg, want het is duidelijk een dashboard
+                <br>
+                <br>
+                Uit deze feedback is het volgende prototype ontstaan, zie de foto hiernaast.
+            </p>
+        </div>
+        <img id="firstimg" src="appv2.png">
+    </section>
+    <section id="second">
+        <div>
+            <h2 id="secondh2">App design V3</h2>
+            <p id="secondp">
+                Uiteindelijk hebben we voor een ander logo gekozen en heb ik de tweede versie aangepast aan onze nieuwe
+                stylesheet (ander font en andere kleuren) en is de derde versie ontstaan. Na deze derde versie ben ik
+                verder gegaan met de andere pagina's.
+            </p>
+        </div>
+        <img id="secondimg" src="appv3.png">
+    </section>
+    <section id="third">
+        <div>
+            <h2 id="thirdh2">App design V4</h2>
+            <p id="thirdp">In de vierde versie heb ik de gamification en de challenges verder uitgewerkt. Ik heb
+                gekozen voor een animatie van een natuurgebied, waarin de dieren uit een meer drinken. Hoe minder
+                lang je doucht, hoe meer water in het meer overblijft voor de dieren. Als je te lang doucht, hebben de
+                dieren te weinig drinken en vluchten ze uit het landschap. Deze dieren brengen dripcoins op, die je uit
+                kan geven in de shop om meer dieren of accesoires voor de Smart Hub aan te schaffen. Hoe volwassener de
+                dieren worden (hoe langer ze uit je meer kunnen drinken), hoe meer punten ze opbrengen. Uit eindelijk
+                heb je zoveel dieren dat je meer te klein wordt en kan je upgraden naar een ander natuurgebied met meer
+                plek voor dieren. Tijdens het douchen zie je alleen het natuurgebied, zodat dit voor zo min mogelijk
+                afleiding zorgt en je dus niet langer gaat douchen door de animatie. Zodra je de douchebeurt heb
+                beeindigd, komen de dieren tevoorschijn en zie je of je voldoende water hebt overgehouden.</p>
+        </div>
+        <img id="thirdimg" src="appv5.png">
+    </section>
+    <section id="fourth">
+        <div>
+            <h2 id="fourthh2">Reflectie</h2>
+            <p id="fourthp">Ik begon dit semester zonder enige designervaring en het ontwerpen van de Drip App heeft mij
+                behoorlijk erbij geholpen. Ik begon met een simpel prototype en met de feedback heb ik steeds mijn
+                prototype aangepast. Ik kon me erg goed in de feedback vinden, vaak waren het dingen die mij destijds
+                nog niet opvielen. Toen de stylesheet af was, kon ik eindelijk alles erop aanpassen (lettertype,
+                kleuren, logo’s, enz). Het logo bovenaan de app heb ik zelf gemaakt (zie logodesign) en de pictogrammen
+                heb ik van het internet gedownload en daarna met behulp van photoshop een gradient erop gezet. De
+                volgende keer zou ik wel wachten met stylen totdat de stylesheet af is, aangezien het anders dubbel werk
+                is. Verder zou ik de volgende keer de app graag functioneel maken, zodat ik hem werkend kan presenteren.
+                In onze proftaak wilden mijn groepsgenoten graag Android Studio gebruiken om de app functioneel te
+                maken, maar de volgende keer zou ik graag Adobe XD willen gebruiken, zodat ik goed kan nakijken of alle
+                knoppen logisch geplaatst zijn en alle pagina’s goed ingedeeld zijn. Over het algemeen ben ik trots op
+                de app, omdat het precies was volgens mijn visie: clean, overzichtelijk en compleet.</p>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
+    <script src="gsapscript.js"></script>
+    <script src="header.js"></script>
+</body>
+
+</html>

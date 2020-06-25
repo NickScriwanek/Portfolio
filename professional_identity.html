@@ -1,60 +1,98 @@
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Identity</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
         <img src="ns.png" id="nslogo">
         <ul>
-            <li><a href="leeruitkomsten.html" onclick="toggle()">TERUG NAAR LEERUITKOMSTEN</a></li>
-            <li><a href="#professional_identity" class= "active" onclick="toggle()">PROFESSIONAL IDENTITY</a></li>
-            <li><a href="#advanced_development" onclick="toggle()">ADVANCED DEVELOPMENT</a></li>
-            <li><a href="#gamification" onclick="toggle()">GAMIFICATION</a></li>
-            <li><a href="#sprintx" onclick="toggle()">SPRINT X</a></li>
+            <li><a href="leeruitkomsten.html" id="backColor">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="#landing" id="landingNav" onclick="toggle('landingNav')">PROFESSIONAL IDENTITY</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">ADVANCED DEVELOPMENT</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">GAMIFICATION</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">BRANDING</a></li>
+            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">SPRINT X</a></li>
+            <li><a href="#fifth" id="fifthNav" onclick="toggle('fifthNav')">TOEKOMSTBEELD</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="professional_identity">
+    <section id="landing">
         <div>
             <h2 id="landingh2">Professional Identity</h2>
-            <p id="landingp">Hier zie je mijn mediaproducten voor Professional Idenity</p>
+            <p id="landingp">Hier zie je mijn mediaproducten voor Professional Identity</p>
         </div>
     </section>
-    <section id="advanced_development">
+    <section id="first">
         <div>
             <h2 id="firsth2">Advanced development</h2>
-            <p id="firsth2">Ik heb mijn portfolio geanimeerd met GSAP, zie hier mijn Advanced Development.</p>
+            <p id="firstp">Ik heb mijn portfolio geanimeerd met GSAP (Green Sock Animation Platform). Ik vind deze
+                library makkelijk in gebruik, het heeft erg veel opties en het vraagt niet veel rekenkracht vergeleken
+                met andere libraries. Ik had ook graag de DrawSVG functie willen laten zien, maar deze is helaas alleen
+                in de betaalde versie beschikbaar.</p>
             <a id="firstbtn" href="advanced_development.html">Meer info</a>
         </div>
         <img id="firstimg" src="gsapimg.png">
     </section>
-    <section id="gamification">
+    <section id="second">
         <div>
-            <h2 id="sixthh2">Gamification</h2>
-            <p id="sixthp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel tijd moeten stoppen. Hier heb ik uren van video van zitten bekijken, zodat ik het een beetje onder de knie kreeg. Als het mogelijk is, zou ik graag in verdere semesters meer met Game Design doen, zodat ik me meer in Unreal Engine kan ontwikkelen.</p>   
+            <h2 id="secondh2">Gamification</h2>
+            <p id="secondp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog
+                steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch
+                heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in
+                Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel
+                tijd moeten stoppen. Hier heb ik uren van video van zitten bekijken, zodat ik het een beetje onder de
+                knie kreeg. Als het mogelijk is, zou ik graag in verdere semesters meer met Game Design doen, zodat ik
+                me meer in Unreal Engine kan ontwikkelen.</p>
         </div>
-        <video id="sixthimg" controls width="1080">
+        <video id="secondimg" controls width="720">
             <source src="gamification.mp4" type="video/mp4">
-          <div style="border: 1px solid black ; padding: 8px ;">
-          Sorry, your browser does not support the &lt;video&gt;
-          </div>
-          </video>
+            <div style="border: 1px solid black ; padding: 8px ;">
+                Sorry, your browser does not support the &lt;video&gt;
+            </div>
+        </video>
 
     </section>
-    <section id="sprintx">
+    <section id="third">
         <div>
-            <h2 id="fifthh2">Sprint X</h2>
-            <p id="fifthp">Voor Sprint X heb ik een interactieve Bibliotheek in Virtual Reality gemaakt. Zo kan je zien wat ik thuis in mijn boekenkast heb staan en kan je de boeken zelf ook lezen.
+            <h2 id="thirdh2">Branding</h2>
+            <p id="thirdp">Ik heb voor branding Coffeelab geanalyseerd met het Brand Identity Prism. Ik heb voor de
+                branding specialisatie Coffeelab gekozen, omdat ze meerdere vestigingen in Eindhoven hebben en het
+                bedrijf me wel aanspreekt met hun moderne uitstraling. Verder heb ik het Brand Identity Prism gebruikt,
+                omdat het Coffeelab en de klant tegenover elkaar zet, terwijl ze ook dingen met elkaar delen. Als je het
+                document wilt zien, kan je op de knop onder deze paragraaf drukken.
             </p>
+            <a id="thirdbtn" href="branding.pdf" target="_blank">Klik hier</a>
+        </div>
+        <img id="thirdimg" src="prism.png">
+    </section>
+    <section id="fourth">
+        <div>
+            <h2 id="fourthh2">Sprint X</h2>
+            <p id="fourthp">Voor Sprint X heb ik een interactieve Bibliotheek in Virtual Reality gemaakt. Zo kan je zien
+                wat ik thuis in mijn boekenkast heb staan en kan je de boeken zelf ook lezen. Ik heb twee verschillende
+                manga ingescand met mijn printer, getextured in Blender en het is allemaal vormgegeven in Unreal Engine.
+            </p>
+            <a id="fourthbtn" href="sprintx.html">Klik hier</a>
+        </div>
+        <img id="fourthimg" src="unreal2.png">
+    </section>
+    <section id="fifth">
+        <div>
+            <h2 id="fifthh2">Toekomstbeeld</h2>
+            <p id="fifthp">Ik zou me graag in semester 3 willen specialiseren in ICT & Game Design and Technology. Ik heb al ervaring met Unity en Unreal Engine en ik maak heel graag games, dus ik zou hier graag meer over willen leren.</p>
         </div>
     </section>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
     <script src="gsapscript.js"></script>
     <script src="header.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosten & Duurzaamheid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
+        <ul>
+            <li><a href="research.html" id="backColor">TERUG NAAR RESEARCH</a></li>
+            <li><a href="#landing" id="landingNav" onclick="toggle('landingNav')">GEMIDDELD WATERVERBRUIK</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">KOSTEN WATERGEBRUIK</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">DUURZAAMHEID</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">REFLECTIE</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="landing">
+        <div>
+            <h2 id="landingh2">Gemiddeld waterverbruik per persoon</h2>
+            <p id="landingp">Gemiddeld verbruikt een persoon 120L water per dag, dat is 43800L water per jaar.
+                <br>
+                Hoe komen we bij die 120L per dag?
+                <br>
+                <br>
+                - 40% douchen en wassen (10L per minuut douchen, 53L per wasbeurt)
+                <br>
+                - 30% WC doorspoelen (10L per spoeling)
+                <br>
+                - 14% keuken (6L per minuut als de kraan openstaat)
+                <br>
+                - 16% overig (tuin)
+            </p>
+            <a id="landingbtn"
+                href="https://www.vanmarcke.com/nl-be/blog/wateroplossingen/feiten-en-liters-cijfers">Bron Vanmarcke</a>
+            <a id="landingbtn" href="https://www.wml.nl/alles-over-water/waterverbruik">Bron WML</a>
+        </div>
+        <img id="landingimg" src="waterverbruik.jpg">
+    </section>
+    <section id="first">
+        <div>
+            <h2 id="firsth2">Kosten watergebruik</h2>
+            <p id="firstp">Water kost per 1000L €1,15.
+                Een huishouden van twee personen verbruikt gemiddeld 93000L per jaar, dus kost het gemiddeld €180 per
+                jaar per huishouden (exclusief vastrecht van €67,51).
+            </p>
+            <a id="firstbtn" href="interviews.html">Klik hier</a>
+        </div>
+        <img id="firstimg" src="nibud.png">
+    </section>
+    <section id="second">
+        <div>
+            <h2 id="secondh2">Duurzaamheid</h2>
+            <p id="secondp">De gemiddelde Nederlander verbruikt 9920kg CO2 per jaar, waarvan 15% komt door gasverbruik
+                (1488KG CO2). Dit is drie keer zoveel als het globaal gemiddelde.
+                Bomen kunnen gemiddeld 20kg CO2 per jaar opnemen en er zijn 162 miljoen bomen in Nederland. Deze bomen
+                kunnen voor 331 duizend mensen per jaar CO2 opnemen, dat is 1,5 keer de bevolking van Eindhoven en dat
+                is 1,9% van de bevolking van Nederland. Dit gasverbruik ontstaat mede door de verwarming van het water,
+                bijvoorbeeld bij het wassen en het douchen.
+                Water wordt steeds schaarser en slechter verdeeld in de wereld, waardoor de kans op een verhoging van de
+                prijs van water hoog is. Deskundigen zeggen dan ook dat water het nieuwe goud wordt. Sommigen zeggen
+                zelfs dat er kans is op een wateroorlog.
+            </p>
+            <a id="secondbtn" href="https://www.milieucentraal.nl/nieuws/2017/3-keer-zoveel-co2-uitstoot/">Bron
+                Milieucentraal</a>
+            <a id="secondbtn"
+                href="https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/#:~:text=Bomen%20zijn%20zeer%20geschikt%20om,zetten%20dit%20om%20in%20zuurstof.">Bron
+                Dutchrenewenergy</a>
+            <a id="secondbtn" href="https://kennisduurzaamwonen.nl/9-hoeveel-co2-nemen-bomen-op/">Bron
+                Kennisduurzaamwonen</a>
+            <a id="secondbtn"
+                href="https://nos.nl/op3/artikel/2323119-water-gaat-vaker-bron-zijn-van-conflicten.html">Bron NOS</a>
+        </div>
+        <img id="secondimg" src="boom.jpg">
+    </section>
+    <section id="third">
+        <div>
+            <h2 id="thirdh2">Reflectie</h2>
+            <p id="thirdp">Ik had niet verwacht dat we 120L per dag zouden verbruiken, dat is behoorlijk veel. Ook was
+                ik verbaasd dat 30% van het gemiddelde waterverbruik door de WC wordt gespoeld, aangezien de spoelbak
+                van een WC helemaal niet zo groot lijkt. Water is ook een stuk goedkoper dan ik had verwacht. Het is dan
+                ook niet gek dat mensen er vaak niet bij stil staan. Hierdoor weten we nu dat we ons product niet hoeven
+                te adverteren als een geldbesparend product. Verder verbruikt de gemiddelde Nederlander 3 keer zoveel
+                CO2 als het globaal gemiddelde, dat mede komt door het hoge gasverbruik, dat deels komt door het
+                verwarmen van water. Echter is de opdracht van Glamorous Goat om waterverbruik inzichtelijk te maken (en
+                mogelijk water te besparen) en niet om het gasverbruik inzichtelijk te maken. Verder is de kans van een
+                waterprijsstijging hoog, wat kan betenenen dat ons product een goede investering kan bieden voor de
+                toekomst.
+            </p>
+            <a id="thirdbtn" href="interviews.html">Klik hier</a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
+    <script src="gsapscript.js"></script>
+    <script src="header.js"></script>
+</body>
+
+</html>

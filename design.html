@@ -1,130 +1,98 @@
 ﻿<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
         <a href="index.html">
             <img src="ns.png" id="nslogo">
         </a>
         <ul>
-            <li><a href="leeruitkomsten.html">TERUG NAAR LEERUITKOMSTEN</a></li>
-            <li><a href="#landing" id="landingNav" onclick="toggle('landingNav')">APP DESIGN</a></li>
+            <li><a href="leeruitkomsten.html" id="backColor">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">APP DESIGN</a></li>
             <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">POSTER DESIGN</a></li>
-            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">LOGOS</a></li>
-            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">GAMIFICATION</a></li>
-            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">SPRINT X</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">DRIP LOGO DESIGN</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">EIGEN LOGO DESIGN</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">REFLECTIE</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
     <section id="landing">
         <div>
-            <h2 id="landingh2">Design</h2>
-            <p id="landingp">Hier zie je mijn mediaproducten voor Design</p>
+            <h2 id="landingh2">App design</h2>
+            <p id="landingp">Ik heb dit semester voor de proftaak een app gemaakt met Adobe XD. Adobe XD had ik best
+                snel onder de knie, dus daarna had ik al snel een prototype gemaakt, zodat ik al snel om feedback kon
+                vragen. Uit deze feedback zijn vier iteraties ontstaan. Klik op de onderstaande knop om het proces te
+                zien.</p>
+            <a id="landingbtn" href="appdesign.html">Klik hier</a>
         </div>
+        <img id="landingimg" src="appv1.png">
     </section>
     <section id="first">
         <div>
-            <h2 id="firsth2">App design V1</h2>
-            <p id="firstp">Voor het ontwerp van de app begon ik eerst met een barebones prototype. Dit prototype heb ik vervolgens aan mensen laten zien die ons product / project helemaal niet kennen, om te kijken of ze snappen dat het een app is over het besparen van water. Verder vroeg ik ook nog om visuele feedback, zodat de app overzichtelijker en mooier wordt.
+            <h2 id="firsth2">Poster design</h2>
+            <p id="firstp">Dit semester heb ik een aantal posters gemaakt om mensen aan het denken te zetten en om
+                mensen over te halen om ons product aan te schaffen. Deze posters heb ik ontworpen in Photoshop en in
+                Illustrator Klik op de onderstaande knop om het proces te zien.</p>
+            <a id="firstbtn" href="posterdesign.html">Klik hier</a>
         </div>
-        <img id="first" src="appv1.png">
+        <img id="firstimg" src="poster_commercieel.png">
     </section>
-    <section>
-        <div>
-            <h2 id="secondh2">App design V2</h2>
-            <p id="secondp">
-            Uit de feedback van deze medestudenten zijn de volgende punten gekomen:
-            <br>
-            -De knoppen moeten in een aparte box, zodat het meer lijkt dat ze klikbaar zijn
-            <br>
-            -Rondere grafiek om de aesthetic bij elkaar te houden
-            <br>
-            -Meer kleuren toevoegen voor meer contrast
-            <br>
-            -De ‘dashboard’ header mag weg, want het is duidelijk een dashboard
-            </p>
-        </div>
-        <img id="secondimg" src="appv2.png">
-    </section>
-    <section>
-        <div>
-            <h2 id="secondh2">App design V3</h2>
-            <p id="secondp">
-                Uiteindelijk hebben we voor een ander logo gekozen, en heb ik de tweede versie aangepast aan onze nieuwe stylesheet (ander font en andere kleuren) en is de derde versie ontstaan. Na deze derde versie ben ik verder gegaan met de andere pagina’s. Scroll naar beneden om V3 te zien.
-            </p>
-        </div>
-        <img id="secondimg" src="appv3.png">
-    </section>
-    <section>
-        <div>
-            <h2 id="secondh2">App design V4</h2>
-            <p id="secondp">In de vierde versie heb ik de gamification en de challenges verder uitgewerkt. Ik heb gekozen voor een animatie van een natuurgebied, waarin jouw dieren uit jouw meer drinken. Hoe minder lang je doucht, hoe meer water in het meer overblijft voor de dieren. Als je te lang doucht, hebben de dieren te weinig drinken en vluchten ze uit het landschap. Deze dieren brengen dripcoins op, die je uit kan geven in de shop om meer dieren of accesoires voor de Smart Hub aan te schaffen. Hoe volwassener de dieren worden (hoe langer ze uit je meer kunnen drinken), hoe meer punten ze opbrengen. Uit eindelijk heb je zoveel dieren dat je meer te klein wordt en kan je upgraden naar een ander natuurgebied met meer plek voor dieren. Tijdens het douchen zie je alleen het natuurgebied, zodat dit voor zo min mogelijk afleiding zorgt en je dus niet langer gaat douchen door de animatie. Zodra je de douchebeurt heb beeindigd, komen de dieren tevoorschijn en zie je of je voldoende water hebt overgehouden.</p>
-        </div>
-        <img id="secondimg" src="appv4.png">
-        <img id="secondimg" src="appv4.2.png">
-    </section>
-
     <section id="second">
         <div>
-            <h2 id="thirdh2">Poster design</h2>
-            <p id="thirdp">Dit semester heb ik een aantal posters gemaakt om mensen aan het denken te zetten en om mensen over te halen om ons product aan te schaffen.</p>
+            <h2 id="secondh2">DRIP LOGO DESIGN</h2>
+            <p id="secondp">Ik heb twee logo's ontworpen voor Drip met behulp van Photoshop. Ik heb Photoshop gebruikt,
+                omdat ik daar bekend mee ben. Het eerste logo heeft de 'd' en de 'p'
+                van 'drip' in elkaar en het symboliseert de stroom van water. Ik heb het Nexa font gebruikt en
+                verschillende soorten blauw, omdat het een waterbedrijf voor moet stellen. Het heeft aardig wat tijd
+                gekost om de 'd'
+                en de 'p' in elkaar te laten vloeien, al helemaal met het gradient. Het tweede logo spelt 'drip', waarin
+                het eerste logo is verwerkt. De volgende keer zou ik het graag met Illustrator willen proberen,
+                aangezien ik
+                er door mijn posterdesign meer ervaring mee heb gekregen en dat eigenlijk meer voor logo's bestemd is.
+                Deze prototypes zijn niet in het eindproduct gebruikt.</p>
         </div>
-    </section>
-    <section>
-        <div>
-            <h2 id="thirdh2">Ideële posters</h2>
-            <p id="thirdp">Ik heb ideële posters gemaakt voor mensen die nog niet op de hoogte zijn van het hoge waterverbruik in Nederland. Zo probeer ik ze bewuster te maken. </p>
-        </div>
-        <img id="thirdimg" src="poster3.png">
-        <img id="thirdimg" src="poster6.png">
-    </section>
-    <section>
-        <div>
-            <h2 id="fourthh2">Commerciële posters</h2>
-            <p id="fourthp"> Voor mensen die al wel met het milieu bezig zijn, heb ik commerciele posters gemaakt die mensen aansporen om ons product aan te schaffen.</p>
-        </div>
-        <img id="fourthimg" src="poster4.png">
-        <img id="fourthimg" src="poster5.png">
-    </section>
-    <section>
-        <div>
-            <h2 id="fifthh2">Nog meer commerciële posters</h2>
-            <p id="fifthp"></p>
-        </div>
-        <img id="fifthimg" src="poster1.png">
-        <img id="fifthimg" src="poster2.png">
+        <img id="secondimg" src="drip1.png">
+        <img id="secondimg" src="drip2.png">
     </section>
     <section id="third">
         <div>
-            <h2 id="landingh2">LOGOS</h2>
-            <p id="landingp">Ik heb ook een aantal logo's ontworpen voor Drip. Het eerste logo heeft de 'd' en de 'p' van 'drip' in elkaar en het symboliseert de stroom van water. Het tweede logo spelt 'drip', waarin het eerste logo is verwerkt. Deze prototypes zijn niet in het eindproduct geberuikt.</p>
+            <h2 id="thirdh2">EIGEN LOGO DESIGN</h2>
+            <p id="thirdp">Ik heb in het startsemester een logo ontworpen voor mijn YouTube kanaal. Ik maak video’s over
+                Japanse stripboeken en novels, dus ik wilde een soort ouderwets lettertype dat je in de eerste boeken
+                kon vinden. Het Mayan font paste hier perfect bij. Mijn YouTube-naam is Mango Reader, maar ik wilde iets
+                speciaals doen. Ik heb daarom de ‘M’ en de ‘R’ in elkaar gestopt, waarblij het vloeiend in elkaar
+                overloopt. Zo heeft het toch nog een modern randje. Ten slotte heb ik een blauw/paars gradient gebruikt,
+                aangezien dat mijn favoriete kleuren zijn.
+                <br>
+                <br>
+                Ik heb in dezelfde stijl een logo voor mijn portfolio, ook het Mayan font, alleen dit keer heb ik ze
+                diagonaal in elkaar laten versmelten. Ik heb mijn initialen gebruikt, vandaar ‘NS’. Mango Reader en Nick
+                Scriwanek zijn natuurlijk dezelfde persoon, daarom wilde ik ze graag in dezelfde stijl houden. Dit logo
+                kan je in de linkerbovenhoek van mijn portfolio vinden.
+            </p>
         </div>
-        <img id="sixthh2" src="drip1.png">
-        <img id="sixthh2" src="drip2.png">
+        <img id="thirdimg" src="mrlogo.png">
     </section>
     <section id="fourth">
         <div>
-            <h2 id="seventhh2">Gamification</h2>
-            <p id="seventhp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel tijd moeten stoppen. Hier heb ik uren van video van zitten bekijken, zodat ik het een beetje onder de knie kreeg. Als het mogelijk is, zou ik graag in verdere semesters meer met Game Design doen, zodat ik me meer in Unreal Engine kan ontwikkelen.</p>   
-        </div>
-        <video id="seventhimg" controls width="1080">
-            <source src="gamification.mp4" type="video/mp4">
-          <div style="border: 1px solid black ; padding: 8px ;">
-          Sorry, your browser does not support the &lt;video&gt;
-          </div>
-          </video>
-
-    </section>
-    <section id="fifth">
-        <div>
-            <h2 id="eighthh2">Sprint X</h2>
-            <p id="eighthp">In Sprint X heb ik een interactieve Bibliotheek in Virtual Reality gemaakt. Zo kan je zien wat ik thuis in mijn boekenkast heb staan en kan je de boeken zelf ook lezen.
+            <h2 id="fourthh2">REFLECTIE</h2>
+            <p id="fourthp">Mijn designskills zijn dit semester behoorlijk verbeterd.
+                Door appdesign heb ik geleerd hoe je een app goed inricht: welke knoppen zijn klikbaar, welke gegevens
+                vinden gebruikers het belangrijkst, hoe je het rustig maar toch compleet houdt en hoe je ervoor zorgt
+                dat alles één samenhangend geheel wordt.
+                Door posterdesign heb ik geleerd hoe je de aandacht van iemand trekt, hoe je de selling-points van je
+                product goed presenteerd en hoe je een boodschap kan overbrengen die mensen tot denken doet zetten.
+                Door logodesign heb ik geleerd hoe je een logo maakt die je bedrijf of persoonlijkheid reflecteert. Dit
+                was een stuk lastiger dan het leek, maar ik ben redelijk creatief dus dat hielp.
             </p>
         </div>
+        <img id="fourthimg" src="ns.png">
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
@@ -133,4 +101,5 @@
     <script src="header.js"></script>
 
 </body>
+
 </html>

@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo" href="index.html">
+        </a>
+        <ul>
+            <li><a href="development.html" id="backColor">TERUG NAAR DEVELOPMENT</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">INLEIDING</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">INHOUD</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">SAMENVATTING</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">REFLECTIE</a></li>
+            <li><a href="#fourth" id="fourthNav" onclick="toggle('fourthNav')">BRONNENLIJST</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="landing">
+        <div>
+            <h2 id="landingh2">Inleiding</h2>
+            <p id="landingp">Om development aan te tonen heb ik een Movie Quiz gemaakt met JavaScript, JQuery en het
+                gebruik van de OMDb API. Ik heb hiervoor gekozen omdat ik nog niet eerder met APIs had gewerkt en ik
+                wilde leren hoe het werkt. Enkel een API vond ik niet leuk genoeg, dus heb ik besloten om er een quiz
+                bij toe te voegen om het wat speelser te maken. De knop onder deze paragraaf linkt naar de werkende
+                applicatie.</p>
+            <a id="landingbtn" href="quizapplicatie.html">Klik hier</a>
+        </div>
+    </section>
+    <section id="first">
+        <div>
+            <h2 id="firsth2">Inhoud</h2>
+            <p id="firsth2">De quiz begint met 4 radiobuttons met ieder een array. Iedere radiobutton bevat 7 bekende
+                filmtitels van een apart genre (action, comedy, drama en horror). Vervolgens zijn er if-statements om te
+                zien welke knop is geselecteerd.
+                Nadat de gebruiker het gewenste genre via de radiobutton heeft gekozen, klikt de gebruiker op bevestigen
+                waardoor het geselecteerde genre in de var selectedGenre wordt gezet en de button wordt uitgeschakeld.
+                Vervolgens wordt er een randomNumber gegenereerd door een formule, waarmee een random filmtitel in de
+                gekozen array wordt gekozen. Deze random filmtitel uit de gekozen array wordt in randomMovie gezet.
+                Vervolgens wordt de response van de JSON van de randomMovie uit de API opgehaald. Inmiddels is er ook
+                een randomNumber2 gegenereerd, die bepaalt welke vraag er wordt gesteld. Er zijn namelijk 3 soorten
+                vragen: vragen met een poster, vragen met een plot en vragen met een of meerdere directors. Hierbij
+                wordt natuurlijk de tekst van het tekstvak “question” aangepast aan de inhoud en wordt de poster /
+                director / plot ook gepresenteerd.
+                Ten slotte is er de checkAnswer functie, die wordt opgeroepen als de gebruiker op de knop naast het
+                antwoordveld klikt. Voor ieder correct antwoord krijg je een punt en je hebt 10 pogingen om zoveel
+                mogelijk films correct te raden, daarna krijg je de eindscore te zien en wordt de pagina na 5 seconden
+                opnieuw geladen.
+            </p>
+        </div>
+        <img id="firstimg" src="gsapimg.png">
+    </section>
+    <section id="second">
+        <div>
+            <h2 id="secondh2">Samenvatting</h2>
+            <p id="secondp">- Ik heb wiskundige formules gebruikt om random getallen te genereren
+                <br>
+                - Ik heb API calls gebruikt om filminformatie uit een API te halen
+                <br>
+                - Ik heb JQuery gebruikt om de values en attributes van een Id te veranderen en de JSON op te vragen.
+                <br>
+                - Ik heb een hoop getElementById gebruikt om de innerHTML en de textContent te veranderen.
+            </p>
+        </div>
+    </section>
+    <section id="third">
+        <div>
+            <h2 id="thirdh2">Reflectie</h2>
+            <p id="thirdp">Ik verwachtte dat JavaScript erg lastig zou zijn, aangezien ik er nog geen ervaring mee had.
+                Uiteindelijk viel het wel mee, aangezien het aardig op C# lijkt. Het werken met een API bleek achteraf
+                ook makkelijker dan ik had verwacht, door een aantal handige tutorials die mij op weg hebben geholpen
+                (die bronnenlijst). De volgende keer zou ik multiple choice vragen willen implementeren en ook een API
+                die wat uitgebreider is, aangezien OMDb niet al te veel informatie geeft. Verder zou ik ook eerst de
+                filmtitels op de posters maskeren, aangezien het antwoord nu op de posters staat. Ik ben best trots op
+                het eindresultaat, het werkt zoals ik het voor ogen had en ik snap nu de basis van JavaScript en zelfs
+                nog een beetje JQuery.</p>
+        </div>
+    </section>
+    <section id="fourth">
+        <div>
+            <h2 id="fourthh2">Bronnenlijst</h2>
+            <a id="fourthbtn" href="http://omdbapi.com/" target="_blank">OMDb website</a>
+            <p id="fourthp">(gebruikt om de API key op te vragen en de parameters te kennen)</p>
+            <a id="fourthbtn" href="https://youtu.be/NE2Uf41Z4Cw" target="_blank">OMDb tutorial</a>
+            <p id="fourthp">(gebruikt om de API calls te leren)</p>
+            <a id="fourthbtn" href="https://youtu.be/ecT42O6I_WI" target="_blank">Coding Train over APIs</a>
+            <p id="fourthp">(gebruikt om te leren hoe APIs werken)</p>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
+    <script src="gsapscript.js"></script>
+    <script src="header.js"></script>
+</body>
+
+</html>

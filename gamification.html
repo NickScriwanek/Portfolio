@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
+        <ul>
+            <li><a href="interactive_media.html" id="backColor">TERUG NAAR INTERACTIVE MEDIA</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">INFOGRAPHIC</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">GAMIFICATION</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="landing">
+        <div>
+            <h2 id="landingh2">Infographic</h2>
+            <p id="landingp">Voor de eerste opdracht van Gamification heb ik een infographic gemaakt met Piktochart over
+                de evolutie van Virtual Reality. Ik heb zelf al een paar jaar een HTC Vive headset en ik heb in het
+                startsemester ook twee Virtual Reality games gemaakt, dus het leek me leuk om Virtual Reality in een
+                tijdlijn te zetten. Een Virtual Reality headset omringt jezelf door een virtuele wereld, vandaar dat ik
+                de tekst op sommige plekken dicht bij de afbeeldingen had gezet, alsof de mensen in de afbeeldingen de
+                tekst konden aanraken. Ik heb er ook een toekomstbeeld in verwerkt, op basis van de technologische
+                ontwikkelingen die nu plaatsvinden.
+            </p>
+        </div>
+        <img id="landingimg" src="infographic.png">
+    </section>
+    <section id="landing">
+        <div>
+            <h2 id="landingh2">Gamification</h2>
+            <p id="landingp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog
+                steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch
+                heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in
+                Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel
+                tijd moeten stoppen. Ik heb hier urenlang video's van moeten kijken, zodat ik het een beetje onder de
+                knie kreeg. Het eindproduct is ver van perfect, maar ik ben er wel tevreden mee, aangezien ik voor de
+                specialisatie nog niks van landscaping wist. Als het mogelijk is, zou ik graag in verdere semesters meer
+                met Game Design doen, zodat ik
+                me meer in Unreal Engine kan ontwikkelen.
+            </p>
+        </div>
+        <video id="landingimg" controls width="720">
+            <source src="gamification.mp4" type="video/mp4">
+            <div style="border: 1px solid black ; padding: 8px ;">
+                Sorry, your browser does not support the &lt;video&gt;
+            </div>
+        </video>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
+    <script src="gsapscript.js"></script>
+    <script src="header.js"></script>
+</body>
+
+</html>

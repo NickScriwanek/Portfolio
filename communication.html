@@ -1,27 +1,80 @@
 ﻿<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Communication</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
         <a href="index.html">
             <img src="ns.png" id="nslogo">
         </a>
         <ul>
-            <li><a href="leeruitkomsten.html">TERUG NAAR LEERUITKOMSTEN</a></li>
-            <li><a href="landing" id="landingNav" class= "active" onclick="toggle('landingNav')">COMMUNICATION</a></li>
+            <li><a href="leeruitkomsten.html" id="backColor">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">MS TEAMS</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">TRELLO</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">WHATSAPP</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">REFLECTIE</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
     <section id="landing">
         <div>
-            <h2 id="landingh2">Communication</h2>
-            <p id="landingp">Ik heb met mijn proftaakcollega’s duidelijke afspraken gemaakt over wanneer we de Standup en Sitdown hebben en die afspraak ben ik altijd nagekomen. Ook geven we elkaar feedback op elkaar’s werk en passen we deze feedback toe. 
-                Verder heb ik de feedback van docenten en sprintreviews altijd gedocumenteerd en heb ik altijd de feedback punten een voor een toegepast op ons vernieuwde product.
-                Ten slotte heb ik ook de feedback van medestudenten en mensen uit onze doelgroep gedocumenteerd en verwerkt in een nieuwe versie. 
+            <h2 id="landingh2">MS Teams</h2>
+            <p id="landingp">Ik heb met mijn proftaakcollega’s duidelijke afspraken gemaakt over wanneer we de Standup
+                en Sitdown hebben en die afspraak ben ik altijd nagekomen. Ook geven we elkaar feedback op elkaar’s werk
+                en passen we deze feedback toe.
+                Verder heb ik de feedback van docenten en sprintreviews altijd gedocumenteerd en heb ik altijd de
+                feedback punten een voor een toegepast op ons vernieuwde product.
+                Ten slotte heb ik ook de feedback van medestudenten en mensen uit onze doelgroep gedocumenteerd en
+                verwerkt in een nieuwe versie (zie Appdesign). Ook zorgde ik er altijd voor dat ik een werkende
+                microfoon en een werkende webcam heb, zodat ik duidelijk verstaanbaar ben en ik ondanks de huidige
+                omstandigheden een call toch nog persoonlijk houd. Ook hebben we afgesproken om alles in 'files' in
+                Teams te zetten, zodat al onze bestanden tot iedereen's beschikking zijn. We verdeelden ons ook vaak op
+                per twee om aan een bepaald onderdeel te werken, dus we deden ook vaak met elkaar samenwerken.
+            </p>
+        </div>
+        <img id="landingimg" src="teams12.png">
+    </section>
+    <section id="first">
+        <div>
+            <h2 id="firsth2">Trello</h2>
+            <p id="firstp">Trello was ons scrumbord door de coronacrisis. We zetten aan het begin van de sprint erop wat
+                we per persoon moesten doen en we beslisten samen hoeveel tijd we per taak nodig hadden. Iedere sitdown
+                controleerden we of deze taken zijn behaald en iedere standup werken we Trello bij. Zo wordt je zelf
+                gemotiveerder omdat je een duidelijk overzicht hebt en zo weten de andere groepsgenoten ook wat je aan
+                het doen bent.
+            </p>
+        </div>
+        <img id="firstimg" src="trello.png">
+    </section>
+    <section id="second">
+        <div>
+            <h2 id="secondh2">Whatsapp</h2>
+            <p id="secondp">We gebruiken nogsteeds regelmatig WhatsApp, zelfs nog na de proftaak. Niet alleen om contact
+                te houden, maar ook om snel antwoord te krijgen op dringende vragen, om feedback te vragen en ook
+                natuurlijk voor de gezelligheid. We waren iedere weekdag van 9.00 tot 15.00 uur (van Standup tot
+                Sitdown)
+                beschikbaar voor elkaar, zodat we elkaar kunnen helpen indien nodig.
+            </p>
+        </div>
+        <img id="secondimg" src="whatsapp.png">
+    </section>
+    <section id="third">
+        <div>
+            <h2 id="thirdh2">Reflectie</h2>
+            <p id="thirdp">Ik ben tevreden over de communicatie binnen onze proftaakgroep. In het begin waren we niet zo
+                transparant, maar daar kwam al snel verandering in door een groepsgesprek met Erik, onze
+                semesterbegeleider. Na dat gesprek zijn we strenger voor elkaar geworden en kwamen we vrijwel altijd
+                onze afspraken na. De taakverdelingen waren eerlijk en we hielden elkaar goed op de hoogte. Ondanks de
+                dip van motivatie die bij bijna iedereen te merken was, hebben we alles volgens afspraak op tijd
+                afgekregen en ik ben zeer tevreden met het eindresultaat. Ook ben ik erg blij dat we als groep nog
+                steeds contact houden, ook al is de proftaak al een maand voorbij. Zo kunnen we elkaar feedback geven en
+                kunnen we van elkaar leren. Iedereen heeft namelijk zijn sterktes en zwaktes en we zijn er om elkaar te
+                helpen.
             </p>
         </div>
     </section>
@@ -31,4 +84,5 @@
     <script src="gsapscript.js"></script>
     <script src="header.js"></script>
 </body>
+
 </html>

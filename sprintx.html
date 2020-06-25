@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <img src="ns.png" id="nslogo">
+        </a>
+        <ul>
+            <li><a href="professional_identity.html" id="backColor">TERUG NAAR PROFESSIONAL IDENTITY</a></li>
+            <li><a href="#landing" id="landingNav" onclick="toggle('landingNav')">WEEK 1</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">WEEK 2</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">WEEK 3</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">REFLECTIE</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="landing">
+        <div>
+            <h2 id="landingh2">Week 1</h2>
+            <p id="landingp">Mijn eerste idee voor Sprint X was om een level in Beat Saber te maken. Beat Saber is een
+                Virtual Reality Rhythm game waarin je blokjes moet slaan op de maat van de muziek. Voordat Half Life
+                Alyx uitkwam, stond het als #1 best verkochte game op Steam sinds release. Ik heb Beat Saber al een
+                aantal jaar en het leek me leuk om zelf een level te maken, aangezien er veel bij komt kijken:
+                lichteffecten, de plaatsing van de blokjes, de liedkeuze, enzovoort. Ik had het idee aan mijn
+                sprintbegeleider Wouter gepresenteerd en Wouter vond dat ik er niet veel van kon leren over ICT & Media
+                Design, dus heb ik verder gebrainstormd over een ander idee.</p>
+        </div>
+        <img id="landingimg" src="beatsaber.jpg">
+    </section>
+    <section id="first">
+        <div>
+            <h2 id="firsth2">Week 2</h2>
+            <p id="firstp">Ik had eerder al mapdesign in Unreal Engine gedaan en ik zou graag meer met Unreal Engine
+                willen werken, dus het leek me een leuk idee om iets in Unreal te maken. Ik maak in mijn vrije tijd ook
+                YouTube filmpjes over manga (Japanse comics) en het leek me leuk om in Unreal Engine een virtuele
+                boekenkast te maken in Virtual Reality. Wouter vond het ook een leuk idee, dus ik ging aan de slag. Ik
+                had eerst in Unreal Engine mijn boekenkast nagemaakt en daarna op schaal een boek gemaakt, beide nog
+                zonder texture, maar je kon het boek wel al oppakken. Het modelleren in Unreal Engine ging vrij soepel,
+                aangezien ik al eerder met Unreal heb gewerkt. Verder had ik al 2 manga’s ingescand met mijn
+                printer (kaft, achterkant en rug), zodat ik in Week 3 de scans in textures kon veranderen in Blender.
+            </p>
+            <a href="appdesign.html">Klik hier</a>
+        </div>
+        <img id="firstimg" src="scan.jpg">
+
+    </section>
+    <section id="second">
+        <div>
+            <h2 id="secondh2">Week 3</h2>
+            <p id="secondp">Eerst ben ik aan de slag gegaan met de fundamentals, het project gebruikt namelijk vooral 3D
+                widgets. Ik had twee boekenkasten in een ruimte gezet, met een scherm er tussenin. Mijn visie was dat
+                als je een boek oppakte, de widget verdween en een ander widget verscheen met informatie over het boek
+                en een ‘lees boek’ knop. Echter is mij dat niet gelukt, omdat Unreal Engine behoorlijk lastig is en er
+                zelfs geen tutorials over te vinden waren. Na een week geëxperimenteerd te hebben om het uiteindelijk
+                toch werkend te krijgen, heb ik besloten om twee knoppen te maken. Ieder boek had een eigen boekenkast
+                met een eigen knop. Zodra je op de knop drukt, word je naar het level gestuurd waarin je het boek kunt
+                lezen. Ieder boek heeft dus een eigen level. Vervolgens was map design aan de beurt. Ik vond dat een
+                warme sfeer het best bij het level past, zodat je je thuis voelt. Verder heb ik contact opgenomen met
+                Vanessa, een groepsgenoot van het startsemester. Zij had in ons Unreal Engine project voorwerpen
+                gemodelleerd en getextured in Blender en zij heeft mij geleerd hoe je in blender kan texturen, zodat ik
+                de scans op de boeken kan zetten. Het scannen, bijsnijden en rechtzetten van de boeken ging goed, maar
+                het texturen in Blender was een stuk lastiger dan verwacht. Ik heb de leeslevels in een achthoek gemaakt
+                met spotlights, zodat je
+                een soort museum gevoel krijgt. Iedere zijde van de achthoek bevat 3 bladzijdes van de manga en elke
+                achthoek bevat een zijde met uitleg over in welke richting je de manga moet lezen (van rechts naar
+                links), zodat je niet bij de verkeerde bladzijde begint.</p>
+        </div>
+        <img id="secondimg" src="unreal2.png">
+    </section>
+    <section id="third">
+        <div>
+            <h2 id="thirdh2">Reflectie</h2>
+            <p id="thirdp">Ik heb veel geleerd in deze sprint. Van hoe je voorwerpen textured in Blender, tot hoe 3D
+                widgets werken in Unreal Engine (en niet te vergeten, hoe je met een printer voorwerpen kan scannen). De
+                volgende keer zou ik eerder research doen over wat wel en wat niet werkt in Virtual Reality, aangezien
+                er niet veel over te vinden is. Zo had ik een week kunnen besparen die ik had kunnen gebruiken voor
+                andere dingen, zoals de soundtrack op de achtergrond toevoegen als je aan het lezen bent of meer boeken
+                toevoegen. Ik ben blij dat ik meer ervaring op heb kunnen doen met Unreal Engine en ik ben erg tevreden
+                met het eindresultaat. Ik wil zeker verder gaan met dit project, ik hoop dat school mij dit toelaat. Zo
+                niet, ga ik er verder aan werken in mijn vrije tijd. De video langs deze paragraaf bevat uitleg (in VR)
+                over hoe alles werkt.
+            </p>
+        </div>
+        <video id="thirdimg" controls width="720">
+            <source src="SprintX.mp4" type="video/mp4">
+            <div style="border: 1px solid black ; padding: 8px ;">
+                Sorry, your browser does not support the &lt;video&gt;
+            </div>
+        </video>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
+    <script src="gsapscript.js"></script>
+    <script src="header.js"></script>
+</body>
+
+</html>

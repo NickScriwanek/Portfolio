@@ -1,42 +1,66 @@
 ﻿<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specialisaties</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
         <a href="index.html">
-            <img src="ns.png" id="nslogo">
+            <img src="ns.png" id="nslogo" href="index.html">
         </a>
         <ul>
             <li><a href="index.html">Terug naar Home</a></li>
-            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">Gamification & Storytelling</a></li>
-            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">Advanced Development</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">GAMIFICATION & STORYTELLING</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">ADVANCED DEVELOPMENT</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">BRANDING</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
     <section id="landing">
         <div>
-            <h2>Gamification & Storytelling</h2>
-            <p>Ik heb voor deze specialisatie een Infographic gemaakt over de evolutie van Virtual Reality, omdat ik zelf ook veel doe met Virtual Reality (gaming, video's kijken) en ik denk dat Virtual Reality nog beter gaat worden in de toekomst. Voor de eindopdracht heb ik een natuurgebied gemaakt in Unreal Engine. </p>
-            <a href="advanced_development.html">Klik hier</a>
+            <h2 id="landingh2">Gamification & Storytelling</h2>
+            <p id="landingp">Ik wil me graag specialiseren in Game Design, dit vond ik erg leuk in semester 1 en nog
+                steeds in semester 2. Ik had wel een gebrek aan tijd door de achterstand van onze proftaak, maar toch
+                heb ik een natuurgebied kunnen realiseren. Ik had voor de specialisatie nog nooit met natuur gewerkt in
+                Unreal en dit was lastiger dan verwacht. Vooral in de painting, landscaping en de foliage heb ik veel
+                tijd moeten stoppen. Hier heb ik uren van video van zitten bekijken, zodat ik het een beetje onder de
+                knie kreeg. Als het mogelijk is, zou ik graag in verdere semesters meer met Game Design doen, zodat ik
+                me meer in Unreal Engine kan ontwikkelen.</p>
         </div>
-        <img class="icons" src="logo1.png">
+        <video id="landingimg" controls width="720">
+            <source src="gamification.mp4" type="video/mp4">
+            <div style="border: 1px solid black ; padding: 8px ;">
+                Sorry, your browser does not support the &lt;video&gt;
+            </div>
+        </video>
+        </div>
     </section>
     <section id="first">
         <div>
-            <h2>Advanced Development</h2>
-            <p>Voor deze specialisatie heb ik JavaScript gebruikt om mijn website levendiger te maken, door een assortiment van verschillende animaties met behulp van GSAP (Green Sock Animation Platform)</p>
-             <a href="advanced_development.html">Klik hier</a>
+            <h2 id="firsth2">Advanced Development</h2>
+            <p id="firstp">Voor deze specialisatie heb ik JavaScript gebruikt om mijn website levendiger te maken, door een
+                assortiment van verschillende animaties met behulp van GSAP (Green Sock Animation Platform)</p>
+            <a id="firstbtn" href="advanced_development.html">Klik hier</a>
         </div>
-        <img src="ns.png">
+        <img id="firstimg" src="ns.png">
     </section>
-    
+    <section id="second">
+        <div>
+            <h2 id="secondh2">Branding</h2>
+            <p id="secondp">Voor deze specialisatie heb ik de Branding Prism methode gebruikt om Coffeelab's branding te analyseren. Ik heb veel over Coffeelab geleerd en ik ga zeker binnenkort een keer op bezoek! Klik op de onderstaande knop om het document te bekijken.</p>
+            <a id="secondbtn" href="branding.pdf" target="_blank">Klik hier</a>
+        </div>
+        <img id="secondimg" src="prism.png">
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
     <script src="gsapscript.js"></script>
     <script src="header.js"></script>
 </body>
+
 </html>

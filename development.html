@@ -1,48 +1,83 @@
 ﻿<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
         <a href="index.html">
-            <img src="ns.png" href="index.html">
+            <img src="ns.png" href="index.html" id="nslogo">
         </a>
         <ul>
-            <li><a href="index.html">TERUG NAAR HOME</a></li>
-            <li><a href="#landing" id="landingNav" class= "active" onclick="toggle('landingNav')">WELKOM</a></li>
-            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">ADVANCED DEVELOPMENT</a></li>
-            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">DEVELOPMENT</a></li>
+            <li><a href="leeruitkomsten.html" id="backColor">TERUG NAAR LEERUITKOMSTEN</a></li>
+            <li><a href="#landing" id="landingNav" class="active" onclick="toggle('landingNav')">ADVANCED
+                    DEVELOPMENT</a></li>
+            <li><a href="#first" id="firstNav" onclick="toggle('firstNav')">MOVIE QUIZ</a></li>
+            <li><a href="#second" id="secondNav" onclick="toggle('secondNav')">HEADER SELECTOR</a></li>
+            <li><a href="#third" id="thirdNav" onclick="toggle('thirdNav')">VERSIEBEHEER</a></li>
+            <li><a href="#" id="gitColor">GITLAB</a></li>
+
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
     <section id="landing">
         <div>
-            <h2 id="landingh2">Development</h2>
-            <p id="landingp">Hier zie je mijn mediaproducten voor Development</p>
+            <h2 id="landingh2">Advanced development</h2>
+            <p id="landingp">Door Advanced Development heb ik geleerd hoe ik libraries met JavaScript kan gebruiken. Ik
+                heb nu vooral gefocust op animatie libraries, waaronder AnimeJS en GSAP, welke overal op mijn Portfolio
+                te vinden zijn.</p>
+            <a id="landingbtn" href="advanced_development.html">Meer info</a>
         </div>
+        <img id="landingimg" src="gsapimg.png">
     </section>
     <section id="first">
         <div>
-            <h2 id="firsth2">Advanced development</h2>
-            <p id="firsth2">Ik heb mijn portfolio geanimeerd met GSAP, zie hier mijn Advanced Development.</p>
-            <a id="firstbtn" href="advanced_development.html">Meer info</a>
+            <h2 id="firsth2">Movie Quiz</h2>
+            <p id="firstp">Om development aan te tonen heb ik een Movie Quiz gemaakt met JavaScript, JQuery en het
+                gebruik van de OMDb API. Ik heb hiervoor gekozen omdat ik nog niet eerder met APIs had gewerkt en ik
+                wilde leren hoe het werkt. Enkel een API vond ik niet leuk genoeg, dus heb ik besloten om er een quiz
+                bij toe te voegen om het wat speelser te maken. </p>
+            <a id="firstbtn" href="moviequiz.html">Klik hier</a>
         </div>
-        <img id="firstimg" src="gsapimg.png">
+        <img id="firstimg" src="movie.jpg">
     </section>
     <section id="second">
         <div>
             <h2 id="secondh2">Header selector</h2>
-            <p id="secondp">Ik heb met JavaScript de header selector (blauwe tegels in de header) geprogrammeerd zonder een library te gebruiken. Deze kan je werkend zien op de voorpagina van mijn portfolio. Als je klikt op een kopje in de header, wordt het kopje blauw en blijft de rest zwart.</p>
-            <a id="secondbtn" href="index.html">Klik hier</a>
+            <p id="secondp">Ik heb met JavaScript de header selector (blauwe tegels in de header) geprogrammeerd zonder
+                een library te gebruiken. Als je klikt op een kopje in de header, wordt het kopje blauw en blijft de
+                rest zwart. Deze POC heb ik gemaakt zodat het duidelijk is bij welk kopje je op de pagina zit. </p>
         </div>
+        <img id="secondimg" src="headercode.PNG">
     </section>
-    
+    <section id="third">
+        <div>
+            <h2 id="thirdh2">Versiebeheer</h2>
+            <p id="thirdp">Versiebeheer is niet helemaal gegaan zoals ik het voor ogen had. In het begin van het
+                semester had ik Gitkraken gebruikt en dat verliep helemaal prima. Echter kwam er een update waardoor
+                Gitkraken alleen betaald beschikbaar was. Vervolgens had ik met mijn school email geregistreerd voor een
+                studenten account en werd ik geweigerd. Ik had contact opgenomen met Luuk voor een oplossing en ik heb
+                uiteindelijk een andere schoolmail gebruikt, maar deze werd ook geweigerd.
+                Daarna had ik Git Bash gedownload en dit werkte prima voor mijn Portfolio. Toen ik development als
+                tweede repo wilde toevoegen, ging het helemaal mis. Ik kan nou niet meer bij de repo van mijn portfolio,
+                evenals de repo van development. Bash zelf werkt prima, maar er wordt niks meer naar GitLab geupload. Ik
+                hoop dit in semester drie te verhelpen, want versiebeheer is niet alleen handig voor mezelf, maar
+                uiteraard ook voor de docenten.
+            </p>
+            <a id="thirdbtn" href="#">GITLAB</a>
+        </div>
+        <img id="thirdimg" src="bash.png">
+    </section>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.js"></script>
     <script src="gsapscript.js"></script>
     <script src="header.js"></script>
 </body>
+
 </html>
